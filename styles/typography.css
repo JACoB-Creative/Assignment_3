@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap');
+
+:root {
+    /* Base values */
+    --text-scale-ratio: 1;
+    --text-base-size: calc(16 * var(--text-scale-ratio)); /* 16px */
+
+    --text-xxs: calc(0.25 * var(--space-unit));      /*  4px */
+    --text-xs:  calc(0.5  * var(--text-base-size));  /*  8px */
+    --text-sm:  calc(0.75 * var(--text-base-size));  /* 12px */
+    --text-md:  calc(1    * var(--text-base-size));  /* 16px */
+    --text-lg:  calc(1.5  * var(--text-base-size));  /* 24px */
+    --text-xl:  calc(2    * var(--text-base-size));  /* 32px */
+    --text-xxl: calc(3    * var(--text-base-size));  /* 48px */
+}
+
+/*  <uniquifier>: Use a unique and descriptive class name
+     <weight>: Use a value from 100 to 900 */
+@font-face {
+    font-family: 'Helvetica-Regular';
+    src: url('fonts/Helvetica.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Helvetica-Bold';
+    src: url('fonts/Helvetica-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Helvetica-Rounded-Bold';
+    src: url('fonts/Helvetica-Rounded-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+/* ---------- TEXT SIZE ---------- */
+
+.text-xxs{
+    font-size: var(--text-xxs);
+}
+
+.text-xs{
+    font-size: var(--text-xs);
+}
+
+.text-sm{
+    font-size: var(--text-sm);
+}
+
+.text-md{
+    font-size: var(--text-md);
+}
+
+.text-lg{
+    font-size: var(--text-lg);
+}
+
+.text-xl{
+    font-size: var(--text-xl);
+}
+
+.text-xxl{
+    font-size: var(--text-xxl);
+}
+
+/* ---------- FONT TYPE ---------- */
+
+.helvetica{
+    font-family: 'Helvetica-Regular', sans-serif;
+}
+
+.helvetica--bold{
+    font-family: 'Helvetica-Bold',sans-serif;
+}
+
+.helvetica--rounded-bold{
+    font-family: 'Helvetica-Rounded-Bold', sans-serif;
+}
+
+.montserrat{
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.montserrat--bold{
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+}
+
+@media screen and (max-width: 390px){
+    :root{
+        --text-scale-ratio: 1.75;
+    }
+}

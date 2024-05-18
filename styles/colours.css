@@ -1,0 +1,22 @@
+:root {
+    --black: #000000;
+    --jonquil: #F3BA1D;
+    --linen: #F3ECE5;
+    --champagne-pink: #F1E1D2;
+    --grey-1: #F5F5F5;
+    --grey-2: #F0F0F0;
+    --grey-3: #A2A2A2;
+    --grey-4: #7B7B7B;
+    --grey-5: #878787;
+    --cyber-yellow: #F5D400;
+    --cinnabar: #E02626;
+    
+    --color-primary: var(--jonquil);
+    --color-text: var(--black);
+    --color-text-placeholder: var(--grey-3);
+    --color-text-checkout: var(--grey-4);
+    --color-background-primiary: var(--grey-1);
+    --color-background-secondary: var(--linen);
+    --color-background-search:var(--grey-2);
+    --color-icon-search: var(--grey-4);
+}

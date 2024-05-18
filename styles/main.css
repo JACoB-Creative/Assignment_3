@@ -1,0 +1,19 @@
+@import url('colours.css');
+@import url('layout.css');
+@import url('spacing.css');
+@import url('typography.css');
+
+/* ==========================
+   Global Styles
+   ========================== */
+
+body{
+    background-color: var(--color-background-primary);
+}
+input{
+    color: var(--color-background-input);
+}
+
+input::placeholder{
+    color: var(--color-text-placeholder);
+}

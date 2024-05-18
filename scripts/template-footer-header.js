@@ -3,6 +3,67 @@ const footerTemplate = document.createElement('template');
 let mainHeader = document.getElementById('main-header');
 let mainFooter = document.getElementById('main-footer');
 
+headerTemplate.innerHTML = `
+<nav class="navbar">
+    <!--Logo-->
+    <div class="nav-logo">
+        <a>
+            <img src="https://github.com/JACoB-Creative/Assignment_3/blob/main/images/top_nav/logo.png?raw=true" class="logo" alt="Logo" >
+        </a>
+    </div>
+
+    <div class="nav-menu">
+        <!--Search-->
+        <div class="search-box">
+            <div class="search">
+                <input type="search" id="input-box" class="search-input" placeholder="Seacrh" autocomplete="off ">
+                <button class="search-button"><i class="search-icon fa-solid fa-magnifying-glass"></i></button>
+            </div>
+
+            <div class="result-box">
+            </div>
+        </div>
+
+        <ul class="nav-catalogue">
+            <!--Catelogue-->
+            <li class="nav-item">
+                <img src="https://github.com/JACoB-Creative/Assignment_3/blob/main/images/top_nav/catelogue/dog.png?raw=true" class="catelogue-logo" alt="Dog catalogue">
+                <a href="#" class="nav-link">Dog</a>
+            </li>
+            <li class="nav-item">
+                <img src="https://github.com/JACoB-Creative/Assignment_3/blob/main/images/top_nav/catelogue/cat.png?raw=true" class="catelogue-logo" alt="Cat catalogue">
+                <a href="#" class="nav-link">Cat</a>
+            </li>
+            <li class="nav-item">
+                <img src="https://github.com/JACoB-Creative/Assignment_3/blob/main/images/top_nav/catelogue/horse.png?raw=true" class="catelogue-logo" alt="Horse catalogue">
+                <a href="#" class="nav-link">Horse</a>
+            </li>
+            <li class="nav-item">
+                <img src="https://github.com/JACoB-Creative/Assignment_3/blob/main/images/top_nav/catelogue/small_pet.png?raw=true" class="catelogue-logo" alt="Small Pets catalogue">
+                <a href="#" class="nav-link">Small Pets</a>
+            </li>
+            <li class="nav-item">
+                <img src="https://github.com/JACoB-Creative/Assignment_3/blob/main/images/top_nav/catelogue/farm.png?raw=true" class="catelogue-logo" alt="Farm catalogue">
+                <a href="#" class="nav-link">Farm</a>
+            </li>
+        </ul>
+    </div>
+
+    <!--Hamburger menu-->
+    <div class="nav-hamburger">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+    </div>
+
+    <div class="nav-cart">
+        <a>
+            <img src="https://github.com/JACoB-Creative/Assignment_3/blob/main/images/top_nav/cart.png?raw=true" alt="cart" class="cart">
+        </a>
+    </div>
+</nav>
+`
+
 footerTemplate.innerHTML = `
 <div class="site_footer_container">
             <div class="site_footer">
@@ -73,4 +134,5 @@ footerTemplate.innerHTML = `
             </div>
         </div>
 `
+mainHeader.appendChild(headerTemplate.content);
 mainFooter.appendChild(footerTemplate.content);
