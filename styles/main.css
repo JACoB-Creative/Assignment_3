@@ -318,6 +318,147 @@ header a {
     display: none;
 }
 
+
+/* ---------------------------------------------------------------------------
+PRODUCT LISTING PAGE   
+--------------------------------------------------------------------------- */
+
+.main{
+    display: flex;
+    flex-direction: column;
+}
+
+.main--product-list{
+    background: #F5F5F5;
+    font-family: Helvetica,Arial,sans-serif;
+}
+
+.entire-page-container{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+
+}
+.list__title{
+    margin: 2rem; /* 32px */
+
+}
+.sidebar-container{
+
+    width: auto;
+    height: auto;
+    grid-column: 1;
+    background: #F3BA1D;
+    margin: 1rem;
+}
+
+
+.product-list-container{
+    display: grid;
+    grid-column: 2/5;
+    grid-template-columns: repeat(3,1fr);
+    padding: 2rem; 
+    flex: 4;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.2rem;
+    margin: 6% auto 0;
+}
+
+/* ---------------------------------------------------------------------------
+single product card   
+--------------------------------------------------------------------------- */
+
+.single_card{
+
+    width: 10.5rem;
+    height: 14rem;
+    margin: 1rem;
+    
+    box-shadow: 0 0.2rem 1.2rem #888888;
+    overflow: hidden;
+    background: #F3ECE5;
+    border-radius: 1rem;
+    transition: all 0.8s ease-in-out;
+}
+
+.single_card:hover{
+    transform: translateY(0.5rem);
+}
+
+.img_area{
+    
+    width: 10.5rem;
+    height: 7.5rem;
+    overflow:hidden;
+}
+
+.img_area img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.img_area:hover img{
+    transform: scale(1.1);
+}
+
+.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 10.5rem;
+    height: 7.5rem;
+    opacity: 0;
+    background-color: #9d9d9d;
+    transition: opacity 0.3s ease;
+}
+
+.single_card:hover .overlay{
+    opacity: 1;
+}
+
+.add_to_cart,
+.view_details{
+    background-color: #F5F5F5;
+    color: #000000;
+    padding: 0.75rem 0.9rem;
+    border-radius: 0.3rem;
+    border: none;
+    font-family:Montserrat, Helvetica, Arial, sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.05rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    margin: 0.4rem;
+}
+
+.add_to_cart:hover,
+.view_details:hover{
+    background-color: #F3BA1D;
+    color: #000000;
+
+}
+
+.product_info{
+    font-family: Helvetica,Arial,sans-serif;
+    text-align: center;
+    padding: 0.85rem;
+}
+.product_name{
+    margin-bottom: 0.85rem;
+}
+.product_price{
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+
 @media screen and (min-width: 390px){
     
     /* ---------------------------------------------------------------------------
