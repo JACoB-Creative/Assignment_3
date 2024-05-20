@@ -1,11 +1,12 @@
+@import url('colours.css');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap');
 
 :root {
-    /* Base values */
+    /* Base values for mobile */
     --text-scale-ratio: 1;
     --text-base-size: calc(16 * var(--text-scale-ratio)); /* 16px */
 
-    --text-xxs: calc(0.25 * var(--space-unit));      /*  4px */
+    --text-xxs: calc(0.25 * var(--text-base-size));  /*  4px */
     --text-xs:  calc(0.5  * var(--text-base-size));  /*  8px */
     --text-sm:  calc(0.75 * var(--text-base-size));  /* 12px */
     --text-md:  calc(1    * var(--text-base-size));  /* 16px */
@@ -18,68 +19,42 @@
      <weight>: Use a value from 100 to 900 */
 @font-face {
     font-family: 'Helvetica-Regular';
-    src: url('fonts/Helvetica.woff') format('woff');
+    src: url('../fonts/Helvetica.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Helvetica-Bold';
-    src: url('fonts/Helvetica-Bold.woff') format('woff');
+    src: url('../fonts/Helvetica-Bold.woff') format('woff');
     font-weight: bold;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Helvetica-Rounded-Bold';
-    src: url('fonts/Helvetica-Rounded-Bold.woff') format('woff');
+    src: url('../fonts/Helvetica-Rounded-Bold.woff') format('woff');
     font-weight: bold;
     font-style: normal;
 }
 
-/* ---------- TEXT SIZE ---------- */
+/* ---------------------------------------------------------------------------
+   Text Size
+--------------------------------------------------------------------------- */
+.text--xxs{font-size: var(--text-xxs);}
+.text--xs{font-size: var(--text-xs);}
+.text--sm{font-size: var(--text-sm);}
+.text--md{font-size: var(--text-md);}
+.text--lg{font-size: var(--text-lg);}
+.text--xl{font-size: var(--text-xl);}
+.text--xxl{font-size: var(--text-xxl);}
 
-.text-xxs{
-    font-size: var(--text-xxs);
-}
-
-.text-xs{
-    font-size: var(--text-xs);
-}
-
-.text-sm{
-    font-size: var(--text-sm);
-}
-
-.text-md{
-    font-size: var(--text-md);
-}
-
-.text-lg{
-    font-size: var(--text-lg);
-}
-
-.text-xl{
-    font-size: var(--text-xl);
-}
-
-.text-xxl{
-    font-size: var(--text-xxl);
-}
-
-/* ---------- FONT TYPE ---------- */
-
-.helvetica{
-    font-family: 'Helvetica-Regular', sans-serif;
-}
-
-.helvetica--bold{
-    font-family: 'Helvetica-Bold',sans-serif;
-}
-
-.helvetica--rounded-bold{
-    font-family: 'Helvetica-Rounded-Bold', sans-serif;
-}
+/* ---------------------------------------------------------------------------
+   Font Type
+--------------------------------------------------------------------------- */
+.helvetica{font-family: 'Helvetica-Regular', sans-serif;}
+.helvetica--bold{font-family: 'Helvetica-Bold',sans-serif;}
+.helvetica--rounded-bold{font-family: 'Helvetica-Rounded-Bold', sans-serif;}
 
 .montserrat{
     font-family: "Montserrat", sans-serif;
@@ -87,7 +62,6 @@
     font-weight: 400;
     font-style: normal;
 }
-
 .montserrat--bold{
     font-family: "Montserrat", sans-serif;
     font-optical-sizing: auto;
@@ -95,8 +69,106 @@
     font-style: normal;
 }
 
-@media screen and (max-width: 390px){
+/* ---------------------------------------------------------------------------
+   Header
+--------------------------------------------------------------------------- */
+.category__text{
+    font-family: 'Helvetica-Regular', sans-serif;
+    font-size: var(--text-md);
+    color: var(--color-text);
+}
+/* ---------------------------------------------------------------------------
+   Footer
+--------------------------------------------------------------------------- */
+.footer__heading-text{
+    font-family: 'Helvetica-Regular', sans-serif;
+    font-size: var(--text-md);
+    color: var(--color-text);
+}
+.footer__copyright-text{
+    font-family: 'Helvetica-Regular', sans-serif;
+    font-size: var(--text-md);
+    color: var(--color-text);
+}
+/* ---------------------------------------------------------------------------
+   Index
+--------------------------------------------------------------------------- */
+.title__text{
+    font-size: var(--text-lg);
+    color: var(--color-text);
+}
+.promo__text{
+    font-size: var(--text-md);
+    color: var(--color-text);
+}
+.promo__subtitle-text{
+    font-size: var(--text-sm);
+    color: var(--color-text);
+}
+/* ---------------------------------------------------------------------------
+   Product List
+--------------------------------------------------------------------------- */
+.list__title-text{
+    font-family: 'Helvetica-Rounded-Bold', sans-serif;
+    font-size: var(--text-xl);
+    color: var(--color-text);
+}
+.filter__content-text{
+    font-family: "Montserrat", sans-serif;
+    font-size: var(--text-md);
+    color: var(--color-text);
+}
+.card__name-text{
+    font-family: 'Helvetica-Regular', sans-serif;
+    font-size: var(--text-sm);
+    color: var(--color-text);
+}
+.card__price-text{
+    font-family: 'Helvetica-Rounded-Bold', sans-serif;
+    font-size: var(--text-md);
+}
+.pagnimation__text{
+    font-family: 'Helvetica-Regular', sans-serif;
+    font-size: 20px; /* FIXED FONT SIZE */
+}
+/* ---------------------------------------------------------------------------
+   Product
+--------------------------------------------------------------------------- */
+
+/**
+=============================================================================
+    PC SECTION
+=============================================================================
+*/
+@media screen and (min-width: 390px){
     :root{
+        /* Base values for PC */
         --text-scale-ratio: 1.75;
+        /* --text-xxs   7px */
+        /* --text-xs   14px */
+        /* --text-sm   21px */
+        /* --text-md   28px */
+        /* --text-lg   42px */
+        /* --text-xl   56px */
+        /* --text-xxl  84px */
     }
+    /* ---------- FOOTER ---------- */
+    .footer__heading-text{
+        font-family: 'Helvetica-Bold',sans-serif;
+        font-size: var(--text-sm);
+    }
+    .footer__section-text{
+        font-family: 'Helvetica-Regular', sans-serif;
+        font-size: var(--text-xs);
+    }
+    /* ---------- PRODUCT LIST ---------- */
+    .filter__heading-text{
+        font-family: 'Helvetica-Rounded-Bold', sans-serif;
+        font-size: var(--text-md);
+    }
+    .filter__content-text{
+        font-family: 'Helvetica-Regular', sans-serif;
+        font-size: var(--text-sm);
+    }
+
 }
