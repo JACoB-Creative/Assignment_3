@@ -17,6 +17,6 @@
     --color-text-checkout: var(--grey-4);
     --color-background-primiary: var(--grey-1);
     --color-background-secondary: var(--linen);
-    --color-background-search:var(--grey-2);
+    --color-background-input:var(--grey-2);
     --color-icon-search: var(--grey-4);
 }

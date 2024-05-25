@@ -6,133 +6,142 @@ let mainFooter = document.getElementById('main-footer');
 headerTemplate.innerHTML = `
 <nav class="navbar">
     <!--Logo-->
-    <div class="nav-logo">
+    <div class="nav__logo">
         <a>
-            <img src="https://github.com/JACoB-Creative/Assignment_3/blob/main/images/top_nav/logo.png?raw=true" class="logo" alt="Logo" >
+            <img src="https://github.com/JACoB-Creative/Assignment_3/blob/main/images/top_nav/logo.png?raw=true" class="nax__logo-img" alt="Logo" >
         </a>
     </div>
 
-    <div class="nav-menu">
+    <div class="nav__menu">
         <!--Search-->
-        <div class="search-box">
-            <div class="search">
-                <input type="search" id="input-box" class="search-input" placeholder="Seacrh" autocomplete="off ">
-                <button class="search-button"><i class="search-icon fa-solid fa-magnifying-glass"></i></button>
+        <div>
+            <div class="nav__search">
+                <input type="search" id="input-box" class="nav__search-input" placeholder="Seacrh" autocomplete="off ">
+                <button class="nav__search-btn"><i class="nav__search-icon fa-solid fa-magnifying-glass"></i></button>
             </div>
 
-            <div class="result-box">
+            <div class="nav__search-result">
             </div>
         </div>
 
-        <ul class="nav-catalogue">
+        <ul class="nav__catalogue">
             <!--Catelogue-->
-            <li class="nav-item">
-                <img src="https://github.com/JACoB-Creative/Assignment_3/blob/main/images/top_nav/catelogue/dog.png?raw=true" class="catelogue-logo" alt="Dog catalogue">
-                <a href="#" class="nav-link">Dog</a>
+            <li class="nav__catelogue-item">
+                <a href="#" class="nav-catelogue-link">
+                    <img src="https://github.com/JACoB-Creative/Assignment_3/blob/main/images/top_nav/catelogue/dog.png?raw=true" class="nav__catelogue-logo" alt="Dog catalogue">
+                    <p>Dog</p>
+                </a>
             </li>
-            <li class="nav-item">
-                <img src="https://github.com/JACoB-Creative/Assignment_3/blob/main/images/top_nav/catelogue/cat.png?raw=true" class="catelogue-logo" alt="Cat catalogue">
-                <a href="#" class="nav-link">Cat</a>
+            <li class="nav__catelogue-item">
+                <a href="#" class="nav-catelogue-link">
+                    <img src="https://github.com/JACoB-Creative/Assignment_3/blob/main/images/top_nav/catelogue/cat.png?raw=true" class="nav__catelogue-logo" alt="Cat catalogue">
+                    <p>Cat</p>
+                </a>
             </li>
-            <li class="nav-item">
-                <img src="https://github.com/JACoB-Creative/Assignment_3/blob/main/images/top_nav/catelogue/horse.png?raw=true" class="catelogue-logo" alt="Horse catalogue">
-                <a href="#" class="nav-link">Horse</a>
+            <li class="nav__catelogue-item">
+                <a href="#" class="nav-catelogue-link">
+                    <img src="https://github.com/JACoB-Creative/Assignment_3/blob/main/images/top_nav/catelogue/horse.png?raw=true" class="nav__catelogue-logo" alt="Horse catalogue">
+                    <p>Horse</p>
+                </a>
             </li>
-            <li class="nav-item">
-                <img src="https://github.com/JACoB-Creative/Assignment_3/blob/main/images/top_nav/catelogue/small_pet.png?raw=true" class="catelogue-logo" alt="Small Pets catalogue">
-                <a href="#" class="nav-link">Small Pets</a>
+            <li class="nav__catelogue-item">
+                <a href="#" class="nav-catelogue-link">
+                    <img src="https://github.com/JACoB-Creative/Assignment_3/blob/main/images/top_nav/catelogue/small_pet.png?raw=true" class="nav__catelogue-logo" alt="Small Pets catalogue">
+                    <p>Small Pets</p>
+                </a>
             </li>
-            <li class="nav-item">
-                <img src="https://github.com/JACoB-Creative/Assignment_3/blob/main/images/top_nav/catelogue/farm.png?raw=true" class="catelogue-logo" alt="Farm catalogue">
-                <a href="#" class="nav-link">Farm</a>
+            <li class="nav__catelogue-item">
+                <a href="#" class="nav-catelogue-link">
+                    <img src="https://github.com/JACoB-Creative/Assignment_3/blob/main/images/top_nav/catelogue/farm.png?raw=true" class="nav__catelogue-logo" alt="Farm catalogue">
+                    <p>Farm</p>
+                </a>
             </li>
         </ul>
     </div>
 
     <!--Hamburger menu-->
-    <div class="nav-hamburger">
-        <span class="bar"></span>
-        <span class="bar"></span>
-        <span class="bar"></span>
+    <div class="nav__hamburger">
+        <span class="nav__hamburger-span"></span>
+        <span class="nav__hamburger-span"></span>
+        <span class="nav__hamburger-span"></span>
     </div>
 
-    <div class="nav-cart">
+    <div class="nav__cart">
         <a>
-            <img src="https://github.com/JACoB-Creative/Assignment_3/blob/main/images/top_nav/cart.png?raw=true" alt="cart" class="cart">
+            <img src="https://github.com/JACoB-Creative/Assignment_3/blob/main/images/top_nav/cart.png?raw=true" alt="cart" class="nav__cart-img">
         </a>
     </div>
 </nav>
 `
 
 footerTemplate.innerHTML = `
-<div class="site_footer_container">
-            <div class="site_footer">
-                <ul class="footer_block">
-                    <li class="footer_heading">
-                        <p>COPORATE</p>
-                        <a href="#">COPORATE</a>
-                    </li>
-        
-                    <li class="footer_list">
-                        <a href="#">Privacy Policy</a>
-                        <a href="#">Retuns & Refund</a>
-                        <a href="#">Term & Condition</a>
-                        <a href="#">Delivery</a>
-                    </li>
-                </ul>
-        
-                <ul class="footer_block">
-                    <li class="footer_heading">
-                        <p>ABOUT US</p>
-                    </li>
+<img src="https://github.com/JACoB-Creative/Assignment_3/blob/main/images/footer/Boarder%204%201.png?raw=true" alt="cat claw" class="info__decor">
+<div class="info-container">
+    <!-- section -->
+    <div class="section-container">
+        <ul class="section">
+            <li class="section__heading">
+                <a href="#" class="section__heading-text">COPORATE</a>
+            </li>
+            <li class="section__list">
+                <a href="#" class="section__list-text">Privacy Policy</a>
+                <a href="#" class="section__list-text">Retuns & Refund</a>
+                <a href="#" class="section__list-text">Term & Condition</a>
+                <a href="#" class="section__list-text">Delivery</a>
+            </li>
+        </ul>
 
-                    <li class="footer_list">
-                        <p>
-                            Pet Horse and Farm,<br/>the revamped animal<br/>feed store formaerly<br/>
-                            known as Essendon Produce
-                        </p>
-                    </li>
-                </ul>
-                
+        <ul class="section">
+            <li class="section__heading">
+                <a href="#" class="section__heading-text">ABOUT US</a>
+            </li>
+            <li class="section__list">
+                <p class="section__list-text">
+                    Pet Horse and Farm,<br/>the revamped animal<br/>feed store formaerly<br/>
+                    known as Essendon Produce
+                </p>
+            </li>
+        </ul>
         
-                <ul class="footer_block">
-                    <li class="footer_heading">
-                        <p>CONTACT US</p>
-                    </li>
-        
-                    <li class="footer_list">
-                        <p>Unit 2C, <br/>Thor Court, Keilor East,<br/> VIC 3033</p>
-                    </li>
-                </ul>
-        
-                <div class="footer_block">
-                    <div class="footer_email"> 
-                        <input type="email" placeholder="Email Address" class="footer_email_text">
-                        <div class="email_btn_icon">
-                            <i class="fa-solid fa-envelope"></i>
-                        </div>
 
-                    </div>
-                </div>
+        <ul class="section">
+            <li class="section__heading">
+                <a href="#" class="section__heading-text">CONTACT US</a>
+            </li>
+            <li class="section__list">
+                <p class="section__list-text">Unit 2C, <br/>Thor Court, Keilor East,<br/> VIC 3033</p>
+            </li>
+        </ul>
+
+        <div class="section">
+            <div>
+                <p class="section__heading section__heading-text">SUBSCRIBE</p>
             </div>
-
-            <div class="footer_bottom_block">
-                <div class="footer_bottom_icons">
-                    <div class="icon_social_media">
-                        <a href="#"><i class="fa-brands fa-facebook icon_social_media"></i></a>
-                        <a href="#"><i class="fa-brands fa-instagram icon_social_media"></i></a>
-                    </div>
-
-                    <div class="icon_payment">
-                        <a href="#"><i class="fa-brands fa-cc-visa icon_payment"></i></a>
-                        <a href="#"><i class="fa-brands fa-cc-mastercard icon_payment"></i></a>
-                        <a href="#"><i class="fa-brands fa-cc-paypal icon_payment"></i></a>
-                    </div>
-                    
-                    <p>Copy right @ 2024 Pet Horse & Farm. Powered by Shopify</p>
-                </div> 
+            <div class="section__email"> 
+                <input type="email" placeholder="Email Address" class="section__email-input montserrat">
+                <button class="section__email-btn"><img src="https://github.com/JACoB-Creative/Assignment_3/blob/main/images/footer/email.png?raw=true" class="secction__email-btn-icon"></button>
             </div>
         </div>
+    </div>
+
+    <!--bottom-->
+    <div class="bottom__container">
+        <div class="bottom__icons-container">
+            <div class="bottom__icon--media">
+                <a href="#" class="icon__media"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#" class="icon__media"><i class="fa-brands fa-instagram icon_social_media"></i></a>
+            </div>
+
+            <div class="bottom__icon--payment">
+                <a href="#" class="icon__payment"><i class="fa-brands fa-cc-visa"></i></a>
+                <a href="#" class="icon__payment"><i class="fa-brands fa-cc-mastercard"></i></a>
+                <a href="#" class="icon__payment"><i class="fa-brands fa-cc-paypal"></i></a>
+            </div>
+            
+            <p class="section__copyright-text">Copy right @ 2024 Pet Horse & Farm. Powered by Shopify</p>
+        </div> 
+    </div>
+</div>
 `
 mainHeader.appendChild(headerTemplate.content);
 mainFooter.appendChild(footerTemplate.content);
