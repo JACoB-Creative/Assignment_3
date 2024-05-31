@@ -77,6 +77,26 @@
     font-size: var(--text-md);
     color: var(--color-text);
 }
+.nav__cart-count-text {
+    font-family: "Montserrat", sans-serif;
+    color: white;
+    font-size: 10px;
+}
+.nav__catelogue-text {
+    font-family: 'Helvetica-Rounded-Bold', sans-serif;
+    font-size: 16px;
+}
+.nav__search-input {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+}
+.nav__catalogue{
+    font-weight: 800;
+}
+.section__email-input{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+}
 /* ---------------------------------------------------------------------------
    Footer
 --------------------------------------------------------------------------- */
@@ -91,6 +111,13 @@
     font-size: var(--text-xs);
     color: var(--color-text);
 }
+.bottom__container{
+    text-align: center;
+}
+.bottom__icon-container{
+    text-align: center;
+}
+
 /* ---------------------------------------------------------------------------
    Index
 --------------------------------------------------------------------------- */
@@ -105,6 +132,12 @@
 .promo__subtitle-text{
     font-size: var(--text-sm);
     color: var(--color-text);
+}
+.arrival__card-name {
+    font-size: var(--text-sm);
+}
+.arrival__card-price {
+    font-size: var(--text-md);
 }
 /* ---------------------------------------------------------------------------
    Product List
@@ -136,12 +169,159 @@
    Product
 --------------------------------------------------------------------------- */
 
+.info__name-text {
+    font-family: 'Helvetica-Regular', sans-serif;
+    font-size: 28px; /* FIXED FONT SIZE */
+    line-height: 35px;
+    margin-bottom: 10px;
+}
+.info__price-text {
+    font-family: 'Helvetica-Regular', sans-serif;
+    font-size: 24px; /* FIXED FONT SIZE */
+    margin-bottom: 24px;
+}
+.info__size-text {
+    font-family: 'Helvetica-Rounded-Bold', sans-serif;
+    font-size: 16px; /* FIXED FONT SIZE */
+    margin-bottom: 8px;
+}
+.info__button-text {
+    font-family: "Montserrat", sans-serif;
+    font-size: 14px; /* FIXED FONT SIZE */
+}
+.tab__header-text {
+    font-family: "Montserrat", sans-serif;
+    font-size: 20px;
+}
+.tab__content-text {
+    font-family: 'Helvetica-Regular', sans-serif;
+    font-size: 16px;
+    margin-bottom: 8px;
+}
+.tab__content-text h1 {
+    font-family: 'Helvetica-Rounded-Bold', sans-serif;
+    font-size: 18px; /* FIXED FONT SIZE */
+    margin-bottom: 8px;
+}
+.tab__content-text ul{
+    margin-left: 16px;
+    list-style-type: disc;
+}
+.notification__add-text {
+    font-family: 'Helvetica-Rounded-Bold', sans-serif;
+    font-size: 28px; /* FIXED FONT SIZE */
+    line-height: 30px;
+}
+.notification__name-text {
+    font-family: 'Helvetica-Regular', sans-serif;
+    font-size: 14px; /* FIXED FONT SIZE */
+}
+.notification__price-text {
+    font-family: 'Helvetica-Regular', sans-serif;
+    font-size: 14px; /* FIXED FONT SIZE */
+    color: red;
+}
+.cart__notification-button {
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+    font-size: 20px; /* FIXED FONT SIZE */
+}
+/* ---------------------------------------------------------------------------
+   Cart
+--------------------------------------------------------------------------- */
+.cart__title-text {
+    font-family: 'Helvetica-Rounded-Bold', sans-serif;
+    font-size: 24px;
+}
+.cart__header-text {
+    font-family: 'Helvetica-Rounded-Bold', sans-serif;
+    font-size: 20px;
+}
+.cart-item__name {
+    font-family: 'Helvetica-Regular', sans-serif;
+    font-size: 16px; /* FIXED FONT SIZE */
+    text-align: center;
+}
+.cart-item__price {
+    font-family: 'Helvetica-Rounded-Bold', sans-serif;
+    font-size: 20px; /* FIXED FONT SIZE */
+    text-align: center;
+    color: red;
+}
+/* ---------------------------------------------------------------------------
+   Checkout
+--------------------------------------------------------------------------- */
+.checkout__title {
+    font-family: 'Helvetica-Bold', sans-serif;
+    font-size: 26px; /* FIXED FONT SIZE */
+    color: var(--grey-5);
+}
+.checkout__input{
+    font-family: 'Helvetica-Regular', sans-serif;
+    font-size: 20px; /* FIXED FONT SIZE */
+}
+.delivery__type {
+    font-family: 'Helvetica-Regular', sans-serif;
+    font-size: 18px; /* FIXED FONT SIZE */
+    color: var(--grey-5);
+}
+.delivery__price {
+    font-family: 'Helvetica-Bold', sans-serif;
+    font-size: 20px; /* FIXED FONT SIZE */
+}
+.delivery__date {
+    font-family: 'Helvetica-Regular', sans-serif;
+    font-size: 18px; /* FIXED FONT SIZE */
+    color: #D1CFCF;
+}
+.summary__order-title { 
+    font-family: 'Helvetica-Bold', sans-serif;
+    font-size: 26px; /* FIXED FONT SIZE */
+    color: var(--grey-5);
+}
+.summary__text-bold {
+    font-family: 'Helvetica-Bold', sans-serif;
+    font-size: 20px; /* FIXED FONT SIZE */
+}
+.summary__text {
+    font-family: 'Helvetica-Regular', sans-serif;
+    font-size: 16px; /* FIXED FONT SIZE */
+    color: var(--grey-4);
+}
+.summary__promo-text {
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+}
+.shipping__button-text {
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+}
+.payment__error-message {
+    font-family: 'Helvetica-Regular', sans-serif;
+    font-size: 12px; /* FIXED FONT SIZE */
+}
+.modal__order-num {
+    font-family: 'Helvetica-Regular', sans-serif;
+    font-size: 16px; /* FIXED FONT SIZE */
+    color: var(--grey-5);
+}
+.modal__order-text {
+    font-family: 'Helvetica-Rounded-Bold', sans-serif;
+    font-size: 24px; /* FIXED FONT SIZE */
+    color: var(--grey-5);
+}
+.modal__button {
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+}
 /**
 =============================================================================
     PC SECTION
 =============================================================================
 */
-@media screen and (min-width: 390px){
+@media screen and (min-width: 400px){
     :root{
         /* Base values for PC */
         --text-scale-ratio: 1.75;
@@ -168,7 +348,7 @@
         line-height: 25px;
     }
     .section__email-input{
-        font-size: ;
+        font-size: 16px;
     }
     /* ---------- PRODUCT LIST ---------- */
     .filter__heading-text{
@@ -179,5 +359,30 @@
         font-family: 'Helvetica-Regular', sans-serif;
         font-size: var(--text-sm);
     }
+    /* ---------------------------------------------------------------------------
+    Index
+    --------------------------------------------------------------------------- */
 
+    .arrival__card-name {
+        font-size: 15px;
+    }
+    .arrival__card-price {
+        font-size: 18px;
+    }
+    /* ---------------------------------------------------------------------------
+    Cart
+    --------------------------------------------------------------------------- */
+    .cart__title-text {
+        font-size: 48px;
+    }
+    .cart-item__name {
+        font-size: 18px;
+    }
+    /* ---------------------------------------------------------------------------
+    Checkout
+    --------------------------------------------------------------------------- */
+    .summary__order-title {
+        font-family: "Montserrat", sans-serif;
+        font-size: 20px;
+    }
 }

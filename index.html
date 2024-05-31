@@ -6,16 +6,184 @@
     <title>index</title>
     <link rel="stylesheet" href="styles/reset.css">
     <link rel="stylesheet" href="styles/main.css">
-    <link rel="stylesheet" href="draft.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 </head>
 <body>
     <header id="main-header"></header>
     <main>
-        
+        <div class="carousel-wrapper">
+            <a class="carousel__control carousel__control--prev" data-slide="prev">‹</a>
+                <div class="carousel">
+                    <div class="carousel__inner">
+                        <div class="carousel__item carousel__item--active">
+                            <img src="images/index/banner/a.png" alt="Slide 1">
+                        </div>
+                        <div class="carousel__item">
+                            <img src="images/index/banner/b.png" alt="Slide 2">
+                        </div>
+                        <div class="carousel__item">
+                            <img src="images/index/banner/c.png" alt="Slide 3">
+                        </div>
+                    </div>
+                </div>
+            <a class="carousel__control carousel__control--next" data-slide="next">›</a>
+        </div>
+        <ol class="carousel__indicators">
+            <li data-slide-to="0" class="carousel__indicator carousel__indicator--active"></li>
+            <li data-slide-to="1" class="carousel__indicator"></li>
+            <li data-slide-to="2" class="carousel__indicator"></li>
+        </ol>
+        <!-- Popular Guide -->
+        <h1 class="guide__subtitle helvetica--rounded-bold text--lg">Popular Guide</h1>
+        <div class="guide">
+            <div class=".guide__link">
+                <img src="images/index/popular_guide/a.png" alt="Pet Food" class="guide__img">
+                <p class="guide__text helvetica text--sm">Pet Food</p>
+            </div>
+            <div class=".guide__link"> 
+                <img src="images/index/popular_guide/b.png" alt="Horse" class="guide__img">
+                <p class="guide__text helvetica text--sm">Hore</p>
+            </div>
+            <div class=".guide__link">
+                <img src="images/index/popular_guide/c.png" alt="Farm" class="guide__img">
+                <p class="guide__text helvetica text--sm">Farm</p>
+            </div>
+            <div class=".guide__link">
+                <img src="images/index/popular_guide/d.png" alt="Explore" class="guide__img">
+                <p class="guide__text helvetica text--sm">Explore</p>
+            </div>
+        </div>
+        <!-- New Arrival -->
+        <h1 class="arrival__subtitle helvetica--rounded-bold text--lg">New Arrival</h1>
+        <div class="slider">
+            <div class="slider__wrapper">
+                <!-- product 1 -->
+                <div class="arrival__card">
+                    <div class="arrival__img">
+                        <img src="https://github.com/JACoB-Creative/Assignment_3/raw/main/images/dog_food/dog_food_1/a.webp" alt="dog food">
+                    </div>
+                    <div class="arrival__card-info">
+                        <p class="arrival__card-name helvetica">Advance Dog Adult Large Oodles Salmon</p>
+                        <p class="arrival__card-price helvetica--rounded-bold">$37.20</p>
+                    </div>
+                </div>
+                <!-- product 2 -->
+                <div class="arrival__card">
+                    <div class="arrival__img">
+                        <img src="https://raw.githubusercontent.com/JACoB-Creative/Assignment_3/main/images/dog_food/dog_food_2/a.webp" alt="dog food">
+                    </div>
+                    <div class="arrival__card-info">
+                        <p class="arrival__card-name helvetica">Advance Dog Adult Small Oodles Salmon</p>
+                        <p class="arrival__card-price helvetica--rounded-bold">$37.40</p>
+                    </div>
+                </div>
+                <!-- product 3 -->
+                <div class="arrival__card">
+                    <div class="arrival__img">
+                        <img src="https://raw.githubusercontent.com/JACoB-Creative/Assignment_3/main/images/dog_food/dog_food_3/a.webp" alt="dog food">
+                    </div>
+                    <div class="arrival__card-info">
+                        <p class="arrival__card-name helvetica">Advance Dog All Breed Adult Wet Food</p>
+                        <p class="arrival__card-price helvetica--rounded-bold">$48.00</p>
+                    </div>
+                </div>
+                <!-- product 4 -->
+                <div class="arrival__card">
+                    <div class="arrival__img">
+                        <img src="https://raw.githubusercontent.com/JACoB-Creative/Assignment_3/main/images/dog_food/dog_food_4/a.webp" alt="dog food">
+                    </div>
+                    <div class="arrival__card-info">
+                        <p class="arrival__card-name helvetica">Advance Dog All Breed Sensitive Skin</p>
+                        <p class="arrival__card-price helvetica--rounded-bold">$48.00</p>
+                    </div>
+                </div>
+                <!-- product 5 -->
+                <div class="arrival__card">
+                    <div class="arrival__img">
+                        <img src="https://raw.githubusercontent.com/JACoB-Creative/Assignment_3/main/images/dog_food/dog_food_5/a.webp" alt="dog food">
+                    </div>
+                    <div class="arrival__card-info">
+                        <p class="arrival__card-name helvetica">Advance Dog Healthy Ageing Large Adult Chicken</p>
+                        <p class="arrival__card-price helvetica--rounded-bold">$125.00</p>
+                    </div>
+                </div>
+                <!-- product 6 -->
+                <div class="arrival__card">
+                    <div class="arrival__img">
+                        <img src="https://raw.githubusercontent.com/JACoB-Creative/Assignment_3/main/images/dog_food/dog_food_6/a.webp" alt="dog food">
+                    </div>
+                    <div class="arrival__card-info">
+                        <p class="arrival__card-name helvetica">Advance Dog Healthy Ageing Medium Breed Chicken</p>
+                        <p class="arrival__card-price helvetica--rounded-bold">$128.70</p>
+                    </div>
+                </div>
+                <!-- product 7 -->
+                <div class="arrival__card">
+                    <div class="arrival__img">
+                        <img src="https://raw.githubusercontent.com/JACoB-Creative/Assignment_3/main/images/dog_food/dog_food_7/a.webp" alt="dog food">
+                    </div>
+                    <div class="arrival__card-info">
+                        <p class="arrival__card-name helvetica">Advance Dog Healthy Ageing Small Breed Chicken</p>
+                        <p class="arrival__card-price helvetica--rounded-bold">$40.05</p>
+                    </div>
+                </div>
+                <!-- product 8 -->
+                <div class="arrival__card">
+                    <div class="arrival__img">
+                        <img src="https://raw.githubusercontent.com/JACoB-Creative/Assignment_3/main/images/dog_food/dog_food_8/a.webp" alt="dog food">
+                    </div>
+                    <div class="arrival__card-info">
+                        <p class="arrival__card-name helvetica">Advance Dog Healthy Weight Large Breed Chicken</p>
+                        <p class="arrival__card-price helvetica--rounded-bold">$40.10</p>
+                    </div>
+                </div>
+                <!-- product 9 -->
+                <div class="arrival__card">
+                    <div class="arrival__img">
+                        <img src="https://raw.githubusercontent.com/JACoB-Creative/Assignment_3/main/images/dog_food/dog_food_9/a.webp" alt="dog food">
+                    </div>
+                    <div class="arrival__card-info">
+                        <p class="arrival__card-name helvetica">Advance Dog Healthy Weight Medium Breed Chicken</p>
+                        <p class="arrival__card-price helvetica--rounded-bold">$40.10</p>
+                    </div>
+                </div>
+                <!-- product 10 -->
+                <div class="arrival__card">
+                    <div class="arrival__img">
+                        <img src="https://raw.githubusercontent.com/JACoB-Creative/Assignment_3/main/images/dog_food/dog_food_10/a.webp" alt="dog food">
+                    </div>
+                    <div class="arrival__card-info">
+                        <p class="arrival__card-name helvetica">Advance Dog Healthy Weight Small Breed Chicken</p>
+                        <p class="arrival__card-price helvetica--rounded-bold">$40.05</p>
+                    </div>
+                </div>
+            </div>
+        </div> 
+        <div class="ad-container">
+            <img class="ad__item--desktop" src="images/index/ad/d.png" alt="Lean how to care your friend">
+            <img class="ad__item--desktop" src="images/index/ad/e.png" alt="Find your favourites">
+            <img class="ad__item--desktop" src="images/index/ad/f.png" alt="save 20%">
+            <img class="ad__item--desktop" src="images/index/ad/g.png" alt="save 50%">
+            
+            <img class="ad__item--mobile" src="images/index/ad/d2.png" alt="Lean how to care your friend">
+            <img class="ad__item--mobile" src="images/index/ad/e2.png" alt="Find your favourites">
+            <img class="ad__item--mobile" src="images/index/ad/f2.png" alt="save 20%">
+            <img class="ad__item--mobile" src="images/index/ad/g2.png" alt="save 50%">
+        </div>
+        <div>
+            <p>Pet, Horse and Farm</p>
+            <h1>Bring goodness 
+                <br>you everyday</h1>
+        </div>
+
     </main>
     <footer id="main-footer"></footer>
-    <script src="scripts/template-footer-header.js"></script>
+    
+    <script src="scripts/template-header.js"></script>
+    <script src="scripts/template-footer.js"></script>
+    <script src="scripts/autocomplete.js"></script>
     <script src="scripts/hamburger-menu.js"></script>
+    <script src="scripts/slider.js"></script>
+    <script src="scripts/index/carousel.js"></script>
 </body>
 </html>

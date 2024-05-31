@@ -10,3 +10,538 @@
     --space-xxl: calc(4    * var(--space-unit));  /* 64px */
     --space-xxl: calc(6    * var(--space-unit));  /* 96px */
 }
+
+/* ---------------------------------------------------------------------------
+   Reusable Style
+--------------------------------------------------------------------------- */
+.mt-16 {
+    margin-top: 16px;
+}
+
+
+/* ---------------------------------------------------------------------------
+   Header
+--------------------------------------------------------------------------- */
+
+header {
+    padding: 0;
+    margin: 0;
+}
+.navbar {
+    padding: 1rem 3rem;
+}
+
+/* ---------- MENU ---------- */
+
+.nav__search {
+    padding: 5px 20px;
+}
+.nav__search-input {
+    margin-left: 0.5rem;
+}
+.nav__search-result ul{
+    padding: 16px 10px;
+}
+.nav__search-result ul li{
+    padding: 15px 10px;
+}
+.nav__catalogue{
+    gap: var(--space-lg);
+}
+
+/* ---------- HAMBURGER ---------- */
+
+.nav__hamburger-span {
+    margin: 5px;
+}
+
+/* ---------- CART ---------- */
+
+.nav__cart-count {
+    padding: 2px 4px;
+}
+
+/* ---------------------------------------------------------------------------
+   Footer
+--------------------------------------------------------------------------- */
+
+footer {
+    margin-top: 24px;
+}
+.info__decor {
+    margin: 0 auto;
+    margin-bottom: -1px;
+    padding: 0;
+}
+.info-container {
+    margin:0;
+    padding: 3rem 0rem 3rem 0rem;
+}
+
+/* ---------- INFORMATION ---------- */
+
+.section-container {
+    margin: 0 auto;
+}
+.section__heading {
+    margin-bottom: 0.8rem;
+}
+
+/* ---------- EMAIL ---------- */
+
+.section__email-input{
+    margin-left: 0.5rem;
+}
+.section__email-input::placeholder{
+    padding-left: 0.5rem;
+}
+
+/* ---------- Bottom ---------- */
+
+.bottom__container{
+    padding: 4rem 0rem 0rem 0rem;
+}
+.bottom__icon-container{
+    margin:1rem;
+    padding: 2rem;
+}
+.bottom__icon--media{
+    padding:1rem 3rem 1rem 1rem;
+}
+.icon__media {
+    padding:1rem 3rem 1rem 1rem;
+}
+.icon__payment {
+    padding:1rem 1rem 1rem 3rem;
+}
+/* ---------------------------------------------------------------------------
+INDEX 
+--------------------------------------------------------------------------- */
+
+/* ---------- Carousel ---------- */
+
+.carousel-wrapper {
+    margin: 0 auto;
+}
+.carousel__control--prev {
+    margin-right: 25px; 
+}
+.carousel__control--next {
+    margin-left: 25px; 
+}
+.carousel__control {
+    line-height: 40px;
+}
+.carousel__indicators {
+    margin: 0;
+    padding: 10px 0;
+}
+.carousel__indicators li {
+    margin: 0 5px;
+}
+
+/* ---------- New arrival ---------- */
+
+.arrival__subtitle {
+    margin-left: 24px;
+}
+.slider {
+    margin: 16px 24px 48px 24px;
+}
+.arrival__card {
+    margin: 1rem;
+}
+.arrival__img {
+    margin: 7.5%;
+}
+.arrival__card-info {
+    padding: 0;
+    margin: 0 7.5%;
+}
+.arrival__card-name {
+    margin-bottom: 6%;
+}
+/* ---------------------------------------------------------------------------
+PRODUCT LIST 
+--------------------------------------------------------------------------- */
+
+/* ---------------------------------------------------------------------------
+PRODUCT 
+--------------------------------------------------------------------------- */
+
+.product__container {
+    margin: 32px 0;
+}
+.product-img__container {
+    margin: 16px;
+}
+.product-img__column {
+    margin: 16px 0;
+    gap: 16px;
+}
+.product-img--small {
+    margin: 0 16px;
+}
+.product-img--large img {
+    margin: 16px;
+}
+.magnify-icon {
+    margin: 16px;
+}
+
+/* ---------- Product information---------- */
+
+.product-info__container {
+    margin: 16px;
+}
+.info__size-container {
+    margin: 10px 0;
+}
+.info__size {
+    padding: 8px 0;
+}
+.info__quantity-button {
+    padding: 14px 10px;
+}
+.info__add {
+    margin-left: 16px;
+    padding: 11.5px 0;
+}
+.info__shop {
+    margin-top: 16px;
+    padding: 11.5px 0;
+}
+.info__apple {
+    margin-top: 16px;
+    padding: 11.5px 0;
+}
+.info__button-icon {
+    margin-left: 5px;
+}
+
+/* ---------- Tabs ---------- */
+
+.product__tab {
+    margin: auto;
+}
+.tab__link {
+    padding: 10px 20px;
+    margin-right: 5px;
+}
+.tab__content {
+    padding: 20px;
+}
+
+/* ---------- Notification ---------- */
+
+.cart__notification {
+    padding-top: 100px;
+    padding-left: 32px;
+    padding-right: 32px;
+}
+.cart__notification-img {
+    margin-right: 16px;
+}
+.notification__items {
+    margin-top: 48px;
+}
+.notification__name-text {
+    padding-left: 24px;
+    padding-top: 3px;
+}
+.notification__price {
+    padding-left: 24px;
+}
+.cart__notification-button {
+    padding: 10px 20px;
+}
+
+/* ---------------------------------------------------------------------------
+CART
+--------------------------------------------------------------------------- */
+
+.cart__title {
+    margin:16px;
+}
+.cart__title-decoration {
+    margin: 16px;
+    padding: 0;
+}
+.cart__header {
+    padding-bottom: 16px;
+}
+.cart-item__container {
+    margin-top: 16px;
+    padding-bottom: 16px;
+}
+.cart-item__name {
+    margin-left: 90px;
+}
+.cart-item__quantity-button {
+    padding: 8px;
+}
+
+/* ---------------------------------------------------------------------------
+SHIPPING
+--------------------------------------------------------------------------- */
+
+.shipping__container {
+    margin:24px;
+}
+.checkout__progress {
+    margin-top: 32px;
+    margin-bottom: 16px;
+    margin-left: calc(33.33% - 168px);
+}
+
+/* ---------- Shipping ---------- */
+
+.shipping__form {
+    margin: 32px 0px;
+    gap: 12px; 
+}
+.shipping__input {
+    padding: 10px;
+}
+
+/* ---------- Delivery ---------- */
+
+.delivery__container {
+    margin: 32px 0px;
+}
+.delivery__option {
+    padding: 10px;
+}
+.delivery__option input[type="radio"] {
+    margin-right: 10px;
+}
+.delivery__details {
+    margin: 16px;
+}
+.delivery__details p:nth-child(2) {
+    margin-top: 12px;
+}
+
+/* ---------- Summary ---------- */
+
+.summary__container {
+    padding:16px;
+    margin-top: 24px;
+    margin-right: 24px;
+}
+.summary__order {
+    padding: 16px;
+}
+.summary__text-container {
+    padding: 16px 0px;
+}
+.shipping__promo-container {
+    margin-top: 16px;
+    padding: 8px; 
+}
+.shipping__apply-container {
+    margin-top: 16px;
+    padding: 8px; 
+}
+.shipping__button-container {
+    padding: 16px 0px;
+    margin: 16px 0px;
+}
+
+/* ---------------------------------------------------------------------------
+PAYMENT
+--------------------------------------------------------------------------- */
+
+.payment__container {
+    margin:24px;
+}
+.payment__form {
+    margin: 32px 0px;
+    gap: 12px; 
+}
+.payment__input {
+    margin: 0 16px;
+    padding: 10px;
+}
+.payment__option {
+    margin: 16px;
+    margin-bottom: 20px;
+}
+.payment__icons img {
+    margin-left: 10px;
+}
+
+/* ---------- MODAL ---------- */
+
+.modal__container {
+    padding: 20px;
+}
+.modal__container img {
+    margin-bottom: 20px;
+}
+.modal__container p {
+    margin: 8px 0 16px 0;
+}
+.modal__button {
+    padding: 10px 20px;
+    margin: 10px;
+}
+
+/* ---------- PAYMENT ---------- */
+
+.payment__error-message {
+    margin-top: 4px;
+    margin-left: 16px;
+}
+
+/**
+=============================================================================
+    IPAD SECTION
+=============================================================================
+*/
+@media screen and (max-width: 900px){
+    /* ---------------------------------------------------------------------------
+    Header   
+    --------------------------------------------------------------------------- */
+
+    /* ---------- MENU ---------- */
+
+    .nav__menu {
+        padding-top: 100px;
+    }
+    .nav__catelogue-logo{
+        margin-right: 16px;
+    }
+    .nav__catelogue-item {
+        margin: 48px 16px;
+    }
+
+    /* ---------------------------------------------------------------------------
+    Footer
+    --------------------------------------------------------------------------- */
+    
+    .section__heading {
+        padding-bottom: 0.5rem;
+        margin-right: 0.5rem;
+        margin-bottom: 1.5rem;
+    }
+
+    /* ---------- Bottom ---------- */
+
+    .bottom__icons-container{
+        margin-bottom: 0.1rem;
+        padding: 0;
+    }
+    .bottom__icon--media{
+        padding:0.5rem 1rem 0.5rem 0.5rem;
+    }
+    .icon__media{
+        padding:0.5rem 1rem 0.5rem 0.5rem;
+    }
+    .bottom__icon--payment{
+        padding:0.5rem 0.5rem 0.5rem 1rem;
+    }
+    .icon__payment {
+        padding:0.5rem 0.5rem 0.5rem 1rem;
+    }
+
+    /* ---------------------------------------------------------------------------
+    PRODUCT LIST 
+    --------------------------------------------------------------------------- */
+    
+    /* ---------------------------------------------------------------------------
+    CART 
+    --------------------------------------------------------------------------- */
+
+    .cart__title {
+        margin: 48px 24px 0 24px;
+    }
+    .cart-item__name {
+        margin-left: 0;
+        margin-top: 10px;
+    }
+    .cart-item__quantity-button {
+        padding: 8px;
+    }
+    .summary__container {
+        margin: 0 24px 24px 24px;
+        padding: 0;
+    }
+}
+
+/**
+=============================================================================
+    Mobile SECTION
+=============================================================================
+*/
+@media screen and (max-width: 400px){
+    :root {
+        font-size: 12px;
+    }
+
+    /* ---------------------------------------------------------------------------
+    INDEX 
+    --------------------------------------------------------------------------- */
+
+    /* ---------- Popular Guide ---------- */
+
+    .guide__subtitle {
+        margin-left: 24px;
+    }
+    .guide {
+        margin: 16px 24px;
+    }
+    .guide__link{
+        margin: 0 8px;
+    }
+    .guide__img {
+        margin-bottom: 8px;
+    }
+    .guide__text {
+        margin: 0; 
+    }
+
+    /* ---------------------------------------------------------------------------
+    PRODUCT LIST 
+    --------------------------------------------------------------------------- */
+
+    /* ---------------------------------------------------------------------------
+    PRODUCT 
+    --------------------------------------------------------------------------- */
+
+    /* ---------- Tabs ---------- */
+        
+    .product__tab {
+        margin: 16px;
+    }
+
+    /* ---------------------------------------------------------------------------
+    SHIPPING
+    --------------------------------------------------------------------------- */
+
+    .button__return {
+        margin: 24px;
+        padding: 0;
+    }
+    .checkout__progress {
+        margin-left: calc(50% - 168px);
+    }
+    .shipping__button-container {
+        margin: 0 24px 24px 24px;
+    }
+
+    /* ---------------------------------------------------------------------------
+    PAYMENT
+    --------------------------------------------------------------------------- */
+
+    .checkout__progress {
+        margin-left: calc(50% - 168px);
+    }
+    .payment__container {
+        margin-right: 0;
+    }
+    .shipping__button-container {
+        margin: 0 24px 24px 24px;
+    }
+
+}

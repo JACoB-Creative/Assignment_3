@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>product</title>
+    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <script src="https://kit.fontawesome.com/bd790a9ac5.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header id="main-header"></header>
+    <div class="product__container" data-id="product-3">
+        <div class="product-img__container">
+            <div class="product-img__column">
+                <div id="info-img" class="product-img--small" data-img="images/dog_food/dog_food_3/a.webp">
+                    <img src="images/dog_food/dog_food_3/a.webp" alt="dog food front">
+                </div>
+                <div class="product-img--small" data-img="images/dog_food/dog_food_3/b.webp">
+                    <img src="images/dog_food/dog_food_3/b.webp" alt="dog food back">
+                </div>
+                <div class="product-img--small" data-img="images/dog_food/dog_food_3/c.webp">
+                    <img src="images/dog_food/dog_food_3/c.webp" alt="dog food ingredients list">
+                </div>
+            </div>
+            <div id="product-img" class="product-img--large">
+                <img src="images/dog_food/dog_food_3/a.webp" alt="dog food large">
+            </div>
+            <div class="magnify-icon">
+                <img src="images/product/a.png" alt="magnify icon" class="product__magnify">
+            </div>
+        </div>
+        <div class="product-info__container">
+            <p id="info-name" class="info__name-text">Advance Dog All Breed Adult Wet Food</p>
+            <p id="info-price" class="info__price-text">$ 48.20</p>
+            <p class="info__size-text">Size</p>
+            <div class="info__size-container">
+                <div class="info__size">
+                    <button class="info__size-button active info__button-text">2.5kg</button>
+                </div>
+                <div class="info__size">
+                    <button class="info__size-button info__button-text">13kg</button>
+                </div>
+            </div>
+            <div class="info__add-container">
+                <div class="info__quantity">
+                    <button class="info__quantity-button align__self-left" id="decrease">
+                        <i class="fa-solid fa-minus"></i>
+                    </button>
+                    <input type="number" class="info__quantity-input" value="0" min="0" id="quantity-input">
+                    <button class="info__quantity-button align__self-right" id="increase">
+                        <i class="fa-solid fa-plus"></i>
+                    </button>
+                </div>
+                <div class="info__add"> 
+                    <button class="info__add-button info__button-text">ADD TO CART</button>
+                </div>
+            </div>  
+            <div class="info__shop">
+                <p class="info__button-text">Buy with</p>
+                <img src="images/product/b.png" class="info__button-icon" alt="shop pay">
+            </div>
+            <div class="info__apple">
+                <p class="info__button-text">Buy with</p>
+                <img src="images/product/c.png" class="info__button-icon" alt="apple pay">
+            </div>
+        </div>
+    </div>
+    
+    <!-- PC Product Tabs -->
+    <div class="product__tab display__pc">
+        <div class="tab__header tab__header-text">
+            <div class="tab__link active" data-tab="description">Description</div>
+            <div class="tab__link" data-tab="key-features">Key Features</div>
+            <div class="tab__link" data-tab="delivery">Delivery</div>
+        </div>
+        <div id="description" class="tab__content-text tab__content active">
+            <h1>Advance Adult Large Oodles Dry Dog Food</h1>
+            <p>ADVANCE dog food formulas deliver optimal nutrition for Australian pets using scientific knowledge and over 45 years of manufacturing experience. ADVANCE products are uniquely formulated for Australian pets.</p>
+            <p>This super premium, Australian made, dry dog food is complete and balanced to support the health and wellbeing of your large adult Poodle mix. It includes green lipped mussel powder to help support healthy joints and a unique blend of nutrients including taurine and arginine to promote improved cardiac function. Real salmon is the first ingredient, which delivers a high quality source of lean protein and omega fatty acids.</p>
+        </div>
+        <div id="key-features" class="tab__content-text tab__content">
+            <h1>Key Features</h1>
+            <ul>
+                <li>Super premium, Australian made, dry dog food with salmon as the #1 ingredient</li>
+                <li>Designed specifically for large dogs with Poodle in their breed mix including Labradoodles, Cavoodles, Groodles, etc.</li>
+                <li>No added wheat, whole corn soy & beef</li>
+                <li>Heart Health Nutrients: Supports vascular health and cardiac function</li>
+                <li>Fermentable Prebiotic Fibre: supports balanced gut microbiome</li>
+                <li>Green lipped mussel powder for healthy joints</li>
+                <li>Antioxidants to support a strong immune system</li>
+                <li>Omega 3 and 6 plus zinc for healthy skin and reduced allergy symptoms</li>
+                <li>Controlled mineral levels and high digestibility to support urinary tract health</li>
+                <li>Designed to reduce dental tartar formation</li>
+            </ul>
+        </div>
+        <div id="delivery" class="tab__content-text tab__content">
+            <p>Pet Horse & Farm will be responsible for the delivery of your goods within the greater Melbourne and Geelong region. We have a friendly and committed team who understand the essence of pet food delivery in Melbourne and will be happy to meet any of your instructions. Our process has been refined over 55 years of delivering across Melbourne. We now offer a postal service to those customers that live out of our delivery range (please see below)</p>
+        </div>
+    </div>
+
+    <!-- Notification -->
+    <div class="cart__notification">
+        <button class="cart__notification-close">
+            <i class="fa-solid fa-xmark"></i>
+        </button>
+        <div class="cart__notification-add">
+            <img src="images/product/f.png" alt="a circle with check mark" class="cart__notification-img">
+            <p class="notification__add-text">Item added to your cart</p>
+        </div>
+        <div class="notification__items">
+            <div class="notification__img">
+                <img src="images/dog_food/dog_food_3/a.webp" alt="dog food front">
+            </div>
+            <p class="notification__name-text">Advance Dog All Breed Adult Wet Food</p>
+            <div class="notification__price">
+                <p class="notification__price-text">$ 48.20</p>
+                <div class="notification__quantity">
+                    <button class="notification__quantity-button align__self-left">
+                        <i class="fa-solid fa-minus"></i>
+                    </button>
+                    <input type="number" class="notification__quantity-input" value="0" id="notification-quantity">
+                    <button class="notification__quantity-button align__self-right">
+                        <i class="fa-solid fa-plus"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <button class="cart__notification-button button--view-cart" onclick="window.location.href='cart.html'" >View my cart</button>
+        <button class="cart__notification-button button--checkout" onclick="window.location.href='cart.html'">CHECKOUT</button>
+    </div>
+
+    <!-- Mobile Product Tabs -->
+    <div class="product__tab display__mobile">
+        <div class="tab__header tab__header-text">
+            <div class="tab__item">
+                <div class="tab__link active" data-tab="description">
+                    Description
+                    <i class="fa-solid fa-chevron-left"></i>
+                </div>
+                <div id="description" class="tab__content-text tab__content active">
+                    <h1>Advance Adult Large Oodles Dry Dog Food</h1>
+                    <p>ADVANCE dog food formulas deliver optimal nutrition for Australian pets using scientific knowledge and over 45 years of manufacturing experience. ADVANCE products are uniquely formulated for Australian pets.</p>
+                    <p>This super premium, Australian made, dry dog food is complete and balanced to support the health and wellbeing of your large adult Poodle mix. It includes green lipped mussel powder to help support healthy joints and a unique blend of nutrients including taurine and arginine to promote improved cardiac function. Real salmon is the first ingredient, which delivers a high quality source of lean protein and omega fatty acids.</p>
+                </div>
+            </div>
+            <div class="tab__item">
+                <div class="tab__link" data-tab="key-features">
+                    Key Features
+                    <i class="fa-solid fa-chevron-left"></i>
+                </div>
+                <div id="key-features" class="tab__content-text tab__content">
+                    <h1>Key Features</h1>
+                    <ul>
+                        <li>Super premium, Australian made, dry dog food with salmon as the #1 ingredient</li>
+                        <li>Designed specifically for large dogs with Poodle in their breed mix including Labradoodles, Cavoodles, Groodles, etc.</li>
+                        <li>No added wheat, whole corn soy & beef</li>
+                        <li>Heart Health Nutrients: Supports vascular health and cardiac function</li>
+                        <li>Fermentable Prebiotic Fibre: supports balanced gut microbiome</li>
+                        <li>Green lipped mussel powder for healthy joints</li>
+                        <li>Antioxidants to support a strong immune system</li>
+                        <li>Omega 3 and 6 plus zinc for healthy skin and reduced allergy symptoms</li>
+                        <li>Controlled mineral levels and high digestibility to support urinary tract health</li>
+                        <li>Designed to reduce dental tartar formation</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="tab__item">
+                <div class="tab__link" data-tab="delivery">
+                    Delivery
+                    <i class="fa-solid fa-chevron-left"></i>
+                </div>
+                <div id="delivery" class="tab__content-text tab__content">
+                    <p>Pet Horse & Farm will be responsible for the delivery of your goods within the greater Melbourne and Geelong region. We have a friendly and committed team who understand the essence of pet food delivery in Melbourne and will be happy to meet any of your instructions. Our process has been refined over 55 years of delivering across Melbourne. We now offer a postal service to those customers that live out of our delivery range (please see below)</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer id="main-footer"></footer>
+
+    <script src="scripts/template-header.js"></script>
+    <script src="scripts/template-footer.js"></script>
+    <script src="scripts/hamburger-menu.js"></script>
+    <script src="scripts/autocomplete.js"></script>
+    <script src="scripts/product/switch-img.js"></script>
+    <script src="scripts/product/magnify-img.js"></script>
+    <script src="scripts/product/size-button.js"></script>
+    <script src="scripts/product/quantity-control.js"></script>
+    <script src="scripts/product/tabs-functionality.js"></script>
+    <script src="scripts/product/read-info.js"></script>
+    <script src="scripts/product/notification.js"></script>
+</body>
+</html>

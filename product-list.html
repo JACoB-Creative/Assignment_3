@@ -5,12 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>product-list</title>
     <link rel="stylesheet" href="styles/reset.css">
-    <!-- <link rel="stylesheet" href="styles/main.css"> -->
-    <link rel="stylesheet" href="list.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <!-- <link rel="stylesheet" href="list.css"> -->
     <link rel="stylesheet" href="typography-0531-YQ.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 </head>
 <body>
+    <header id="main-header"></header>
     <main class="product-list__container">
         
         <span class="product-list__breadcrumble">
@@ -165,8 +166,8 @@
                         <div class="card__img-area">
                             <img src="https://github.com/JACoB-Creative/Assignment_3/raw/main/images/dog_food/dog_food_1/a.webp" alt="">
                             <div class="card__overlay">
-                                <button class="card__add">Add to Cart</button>
-                                <button class="card__view">View Details</button>
+                                <button class="card__add" >Add to Cart</button>
+                                <button class="card__view" onclick="window.location.href='product-1.html'">View Details</button>
                             </div>
                         </div>
             
@@ -189,7 +190,7 @@
                             <img src="https://github.com/JACoB-Creative/Assignment_3/raw/main/images/dog_food/dog_food_2/a.webp" alt="">
                             <div class="card__overlay">
                                 <button class="card__add">Add to Cart</button>
-                                <button class="card__view">View Details</button>
+                                <button class="card__view" onclick="window.location.href='product-2.html'">View Details</button>
                             </div>
                         </div>
             
@@ -449,7 +450,12 @@
             <button class="pagination__text" onclick="location.href='#'">8</button>
         </div>
     </main>
-    <script src="scripts/template-footer-header.js"></script>
+
+    <footer id="main-footer"></footer>
+
+    <script src="scripts/template-header.js"></script>
+    <script src="scripts/template-footer.js"></script>
+    <script src="scripts/autocomplete.js"></script>
     <script src="scripts/hamburger-menu.js"></script>
 </body>
 </html>

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+    <header id="main-header" class="display__pc"></header>
+    <header class="shipping__header display__mobile">
+        <div class="shipping__header-container">
+            <button type="button" class="button__return" onclick="window.location.href='cart.html'">
+                <img src="images/checkout/d.png" class="icon__small" alt="black arrow in white background">
+            </button>
+            <p class="helvetica--bold text--lg">Payment</p>
+        </div>
+    </header>
+    <img src="images/checkout/b.png" class="checkout__progress" alt="shipping progress bar">
+    <div class="checkout__container">
+        <div class="payment__container">
+            <h1 class="checkout__title">Payment</h1>
+            <form action="/submit-shipping" method="POST" class="payment__form" id="payment-form">
+                <div class="payment__option">
+                    <label class="payment__label">
+                        <input type="radio" name="payment-method" value="credit-card" class="payment__radio" checked>
+                        <span class="payment__radio-custom"></span>
+                        Credit Card
+                    </label>
+                    <div class="payment__icons">
+                        <img src="images/checkout/e.png" alt="visa">
+                        <img src="images/checkout/f.png" alt="master card">
+                        <img src="images/checkout/g.png" alt="american express">
+                    </div>
+                </div>
+                <span class="payment__divider"></span>
+                <div>
+                    <input type="text" name="card-number" placeholder="Card Number" required class="payment__input checkout__input">
+                    <span class="payment__error-message">Please supply a valid card number</span>
+                </div>
+                <div>
+                    <input type="text" name="name-on-card" placeholder="Name on Card" required class="payment__input checkout__input">
+                    <span class="payment__error-message">Please supply a valid name</span>
+                </div>
+                <div>
+                    <input type="tel" name="expire-date" placeholder="Expire Date (MM/YY)" required class="payment__input checkout__input">
+                    <span class="payment__error-message">Please supply a valid expire date</span>
+                </div>
+                <div>
+                    <input type="text" name="cvv" placeholder="CVV" required class="payment__input checkout__input">
+                    <span class="payment__error-message">Please supply a valid CVV</span>
+                </div>
+                <span class="payment__divider"></span>
+                <div class="payment__option">
+                    <label class="payment__label">
+                        <input type="radio" name="payment-method" value="paypal" class="payment__radio">
+                        <span class="payment__radio-custom"></span>
+                        PayPal
+                    </label>
+                    <div class="payment__icons">
+                        <img src="images/checkout/h.png" alt="PayPal">
+                    </div>
+                </div>
+            </form>
+        </div>
+
+        <div class="summary__container display__pc">
+            <div class="summary__order">
+                <p class="summary__order-title">Order Summary - #0290115</p>
+            </div>
+            <div class="summary__text-container">
+                <div class="layout__flex-row summary__text">
+                    <p class="align__self-left">Subtotal</p>
+                    <div id="checkout-subtotal" class="align__self-right"></div>
+                </div>
+                <div class="layout__flex-row summary__text">
+                    <p class="align__self-left">shipping</p>
+                    <p class="align__self-right">$ 12.00</p>
+                </div>
+            </div>
+            <div class="mt-16 layout__flex-row summary__text-bold">
+                <p class="align__self-left">Total</p>
+                <div id="checkout-total" class="align__self-right"></div>
+            </div>
+            <div class="shipping__button-container">
+                <button type="button" class="shipping__button-text" id="place-order">Place Order</button>
+            </div>
+        </div>
+        <div class="shipping__button-container display__mobile">
+            <button type="button" class="shipping__button-text" id="place-order">Place Order</button>
+        </div>
+    </div>
+
+    <div class="modal" id="order-complete-modal">
+        <div class="modal__container">
+            <img src="images/checkout/c.png" alt="Order Complete Image">
+            <h3 class="modal__order-num">#0290115</h3>
+            <p class="modal__order-text">Order Complete</p>
+            <button class="modal__button" onclick="window.location.href='index.html'">RETURN TO HOME</button>
+            <button class="modal__button button--view" >VIEW YOUR ORDER</button>
+        </div>
+    </div>
+
+    <script src="scripts/template-header.js"></script>
+    <script src="scripts/hamburger-menu.js"></script>
+    <script src="scripts/autocomplete.js"></script>
+    <script src="scripts/checkout/validation.js"></script>
+    <script src="scripts/checkout/place-order.js"></script>
+    <script src="scripts/cal-total.js"></script>
+</body>
+</html>
