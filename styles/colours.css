@@ -20,3 +20,227 @@
     --color-background-input:var(--grey-2);
     --color-icon-search: var(--grey-4);
 }
+
+/* ---------------------------------------------------------------------------
+   Header
+--------------------------------------------------------------------------- */
+header {
+    background-color: var(--color-primary);
+}
+header a {
+    color: black;
+}
+
+/* ---------- MENU ---------- */
+
+.nav__search {
+    background: #F0F0F0;
+}
+.nav__search-btn .nav__search-icon{
+    color:#7B7B7B;
+}
+.nav__search-input {
+    color: #000;
+}
+.nav__search-input::placeholder {
+    color: #a2a2a2;
+}
+.nav__search-result {
+    background-color: #F0F0F0;
+}
+.nav__search-result ul li:hover{
+    background: var(--color-primary);
+}
+.nav__catelogue-link:hover {
+    color: #555555;
+}
+
+/* ---------- HAMBURGER ---------- */
+
+.nav__hamburger-span {
+    background: black;
+}
+
+/* ---------- CART ---------- */
+
+.nav__cart-count {
+    background: black;
+}
+
+/* ---------------------------------------------------------------------------
+   Footer
+--------------------------------------------------------------------------- */
+.info-container {
+    background-color: var(--color-primary);
+}
+.section__list:hover{
+    color:rgb(255, 244, 190);
+}
+
+/* ---------- EMAIL ---------- */
+
+.section__email{
+    background: #F0F0F0;
+}
+.section__email-input::placeholder{
+    color: #888888;
+}
+.section__email-btn{
+    background: #000000;
+}
+.section__email-btn:hover{
+    background: #9d9d9d;
+}
+
+/* ---------- Bottom ---------- */
+
+.icon__media {
+    color: black;
+}
+.icon__payment {
+    color: black;
+}
+
+/* ---------------------------------------------------------------------------
+INDEX 
+--------------------------------------------------------------------------- */
+
+/* ---------- Carousel ---------- */
+
+.carousel__control {
+    color: black;
+}
+.carousel__control:hover {
+    color: #aaaaaa;
+}
+.carousel__indicators li {
+    background-color: var(--grey-3);
+}
+.carousel__indicators li.carousel__indicator--active {
+    background-color: var(--color-primary); 
+}
+
+/* ---------- New arrival ---------- */
+
+.arrival__card {
+    background: #F3ECE5;
+}
+
+/* ---------------------------------------------------------------------------
+PRODUCT LIST 
+--------------------------------------------------------------------------- */
+
+/* ---------------------------------------------------------------------------
+PRODUCT 
+--------------------------------------------------------------------------- */
+
+.product-img__container {
+    background: white;
+}
+.product-img--small {
+    border: 2px solid var(--grey-2);
+}
+.product-img--small.selected {
+    border-color: var(--grey-5);
+}
+
+/* ---------- Product information---------- */
+
+.info__size {
+    background-color: #F3ECE5; 
+}
+.info__size.active {
+    border-color: #EBBB2E;
+}
+.info__quantity {
+    background: #F3ECE5;
+}
+.info__quantity-button {
+    background-color: var(--color-primary);
+}
+
+/* ---------------------------------------------------------------------------
+CART
+--------------------------------------------------------------------------- */
+.cart-item__quantity-button {
+    background: var(--color-primary);
+}
+.cart-item__quantity {
+    background: white;
+}
+/* ---------------------------------------------------------------------------
+SHIPPING
+--------------------------------------------------------------------------- */
+
+/* ---------- Shipping ---------- */
+
+.shipping__input {
+    background: white;
+}
+
+/* ---------- Delivery ---------- */
+
+.delivery__container {
+    background: white;
+}
+.delivery__divider {
+    background-color: #ddd;
+}
+
+
+/* ---------------------------------------------------------------------------
+PAYMENT
+--------------------------------------------------------------------------- */
+
+.payment__form {
+    background: white;
+}
+.modal__button {
+    background-color: var(--color-primary);
+}
+.button--view {
+    background-color: var(--grey-5);
+}
+.modal__button:hover {
+    background-color: var(--grey-2);
+}
+/**
+=============================================================================
+    IPAD SECTION
+=============================================================================
+*/
+@media screen and (max-width: 900px){
+    /* ---------------------------------------------------------------------------
+    Header   
+    --------------------------------------------------------------------------- */
+
+        /* ---------- MENU ---------- */
+
+        .nav__menu {
+            background-color: #F3ECE5;
+        }
+}
+
+/**
+=============================================================================
+    Mobile SECTION
+=============================================================================
+*/
+@media screen and (max-width: 400px){
+    /* ---------------------------------------------------------------------------
+    Header   
+    --------------------------------------------------------------------------- */
+
+    /* ---------- Popular Guide ---------- */
+    .guide__text {
+        color: black;
+    }
+
+    /* ---------------------------------------------------------------------------
+    SHIPPING
+    --------------------------------------------------------------------------- */
+
+    .button__return {
+        background: white;
+    }
+}

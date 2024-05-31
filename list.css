@@ -1,9 +1,7 @@
 /* ---------------------------------------------------------------------------
 PRODUCT LISTING PAGE   
 --------------------------------------------------------------------------- */
-*body{
-    background: #F5F5F5;
-}
+
 .product-list__container{
     /* max-width: 1368px; */
     padding: 0 2%;
@@ -337,8 +335,4 @@ single product card
         font-weight: bold;
         font-size: 0.8rem;
     }
-
-
-
-
 }

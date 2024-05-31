@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart</title>
+    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <script src="https://kit.fontawesome.com/bd790a9ac5.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header id="main-header"></header>
+    <div class="cart__title">
+        <img src="images/cart/a.png" alt="dog footprint" class="cart__title-decoration">
+        <p class="cart__title-text">Cart</p>
+    </div>
+
+    <div class="checkout__container">
+        <div class="cart__container">
+            <div class="cart__header">
+                <p class="cart__header-text cart__header-text--product">Product</p>
+                <p class="cart__header-text cart__header-text--quantity">Quantity</p>
+                <p class="cart__header-text cart__header-text--total">Total</p>
+            </div>
+            <div class="cart__items" id="cart__items">
+                <!-- Cart items will be dynamically added here -->
+            </div>            
+        </div>
+        
+        <div class="summary__container">
+            <div class="layout__flex-row">
+                <div class="shipping__promo-container">
+                    <input type="text" name="Promo code" placeholder="Promo code" class="summary__promo-text">
+                </div>
+                <div class="shipping__apply-container">
+                    <button class="summary__promo-text">Apply</button>
+                </div>
+            </div>
+            <div class="summary__text-container">
+                <div class="layout__flex-row summary__text">
+                    <p class="align__self-left">Subtotal</p>
+                    <div id="checkout-subtotal" class="align__self-right"></div>
+                </div>
+                <div class="layout__flex-row summary__text">
+                    <p class="align__self-left">shipping</p>
+                    <p class="align__self-right">$ 12.00</p>
+                </div>
+            </div>
+            <div class="mt-16 layout__flex-row summary__text-bold">
+                <p class="align__self-left">Total</p>
+                <div id="checkout-total" class="align__self-right"></div>
+            </div>
+            <div class="shipping__button-container display__pc">
+                <button type="button" class="shipping__button-text" onclick="window.location.href='shipping.html'">CHECKOUT</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="shipping__button-container display__mobile">
+        <button type="button" class="shipping__button-text" onclick="window.location.href='shipping.html'">CHECKOUT</button>
+    </div>
+
+    <footer id="main-footer"></footer>
+
+    <script src="scripts/template-header.js"></script>
+    <script src="scripts/template-footer.js"></script>
+    <script src="scripts/hamburger-menu.js"></script>
+    <script src="scripts/autocomplete.js"></script>
+    <script src="scripts/cart/add-items.js"></script>
+    <script src="scripts/cal-total.js"></script>
+</body>
+</html>

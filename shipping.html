@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>checkout</title>
+    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+    <header id="main-header" class="display__pc"></header>
+    <header class="shipping__header display__mobile">
+        <div class="shipping__header-container">
+            <button type="button" class="button__return" onclick="window.location.href='cart.html'">
+                <img src="images/checkout/d.png" class="icon__small" alt="black arrow in white background">
+            </button>
+            <p class="helvetica--bold text--lg">Shipping</p>
+        </div>
+    </header>
+    <img src="images/checkout/a.png" class="checkout__progress" alt="shipping progress bar">
+    <div class="checkout__container">
+        <div class="shipping__container">
+            <h1 class="checkout__title">Shipping Address</h1>    
+            <form action="/submit-shipping" method="POST" class="shipping__form">
+                <input type="text" name="first-name" placeholder="First Name" required class="shipping__input checkout__input">
+                <input type="text" name="last-name" placeholder="Last Name" required class="shipping__input checkout__input">
+                <input type="tel" name="mobile" placeholder="Mobile" required class="shipping__input checkout__input">
+                <input type="text" name="address" placeholder="Address" required class="shipping__input checkout__input">
+                <input type="text" name="city" placeholder="City" required class="shipping__input checkout__input">
+                <input type="text" name="country" placeholder="Country" required class="shipping__input checkout__input">
+                <input type="text" name="postcode" placeholder="Postcode" required class="shipping__input checkout__input">
+            </form>            
+
+            <h1 class="checkout__title">Delivery Options</h1>
+            <form class="delivery__container">
+                <label class="delivery__option">
+                    <div class="delivery__details">
+                        <div class="layout__flex-row">
+                            <p class="delivery__type align__self-left">Standard Delivery</p>
+                            <p class=" delivery__price align__self-right">$ 12.00</p>
+                        </div>
+                        <p class="delivery__date">Delivered on or before 4 May, 2024</p>
+                    </div>
+                    <input type="radio" name="delivery" value="standard" checked>
+                </label>
+                <div class="delivery__divider"></div>
+                <label class="delivery__option">
+                    <div class="delivery__details">
+                        <div class="layout__flex-row">
+                            <p class="delivery__type align__self-left">Express Delivery</p>
+                            <p class="delivery__price align__self-right">$ 25.00</p>
+                        </div>
+                        <p class="delivery__date">Delivered on or before 1 May, 2024</p>
+                    </div>
+                    <input type="radio" name="delivery" value="express">
+                </label>
+            </form>
+        </div>
+
+        <div class="summary__container display__pc">
+            <div class="summary__order">
+                <p class="summary__order-title">Order Summary - #0290115</p>
+            </div>
+            <div class="summary__text-container">
+                <div class="layout__flex-row summary__text">
+                    <p class="align__self-left">Date</p>
+                    <p class="align__self-right">19 April 2024</p>
+                </div>
+                <div class="layout__flex-row summary__text">
+                    <p class="align__self-left">Time</p>
+                    <p class="align__self-right">8:02 PM</p>
+                </div>
+            </div>
+            <div class="summary__text-container">
+                <div class="layout__flex-row summary__text-bold">
+                    <p class="align__self-left">Product</p>
+                    <p>Quantity</p>
+                </div>
+                <div id="checkout-info" class="summary__text"></div>
+            </div>
+            
+            <div class="layout__flex-row">
+                <div class="shipping__promo-container">
+                    <input type="text" name="Promo code" placeholder="Promo code" class="summary__promo-text">
+                </div>
+                <div class="shipping__apply-container">
+                    <button class="summary__promo-text">Apply</button>
+                </div>
+            </div>
+
+            <div class="summary__text-container">
+                <div class="layout__flex-row summary__text">
+                    <p class="align__self-left">Subtotal</p>
+                    <div id="checkout-subtotal" class="align__self-right"></div>
+                </div>
+                <div class="layout__flex-row summary__text">
+                    <p class="align__self-left">shipping</p>
+                    <p class="align__self-right">$ 12.00</p>
+                </div>
+            </div>
+            <div class="mt-16 layout__flex-row summary__text-bold">
+                <p class="align__self-left">Total</p>
+                <div id="checkout-total" class="align__self-right"></div>
+            </div>
+            <div class="shipping__button-container">
+                <button type="button" class="shipping__button-text" onclick="window.location.href='payment.html'">Proceed to Payment</button>
+            </div>
+        </div>
+        <div class="shipping__button-container display__mobile">
+            <button type="button" class="shipping__button-text" onclick="window.location.href='payment.html'">Proceed to Payment</button>
+        </div>
+    </div>
+
+    <script src="scripts/template-header.js"></script>
+    <script src="scripts/hamburger-menu.js"></script>
+    <script src="scripts/autocomplete.js"></script>
+    <script src="scripts/checkout/add-info.js"></script>
+    <script src="scripts/cal-total.js"></script>
+</body>
+</html>

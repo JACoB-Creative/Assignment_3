@@ -1,5 +1,5 @@
 let availableKeywords = ['Dog','Dog Food','Dog Bedding', 'Dog Treats', 'Dog Accessories', 'Dog Medicine', 'Cat'];
-const resultBox = document.querySelector(".result-box");
+const resultBox = document.querySelector(".nav__search-result");
 const inputBox = document.getElementById("input-box");
 
 inputBox.onkeyup = function(){

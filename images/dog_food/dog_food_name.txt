@@ -1,11 +1,11 @@
-1. Advance Dog Adult Large Oodles Salmon 
-2. Advance Dog Adult Small Oodles Salmon 
-3. Advance Dog All Breed Adult Wet Food
-4. Advance Dog All Breed Sensitive Skin & Digestive Adult Wet Food
-5. Advance Dog Healthy Ageing Large Adult Chicken
-6. Advance Dog Healthy Ageing Medium Breed Chicken
-7. Advance Dog Healthy Ageing Small Breed Chicken 
-8. Advance Dog Healthy Weight Large Breed Chicken 
-9. Advance Dog Healthy Weight Medium Breed Chicken
-10. Advance Dog Healthy Weight Small Breed Chicken 
-11. Advance Dog Medium Breed Adult
+1. Advance Dog Adult Large Oodles Salmon 					37.2
+2. Advance Dog Adult Small Oodles Salmon 					37.4
+3. Advance Dog All Breed Adult Wet Food						  48
+4. Advance Dog All Breed Sensitive Skin & Digestive Adult Wet Food  48
+5. Advance Dog Healthy Ageing Large Adult Chicken  			125
+6. Advance Dog Healthy Ageing Medium Breed Chicken  			128.7
+7. Advance Dog Healthy Ageing Small Breed Chicken  			40.05
+8. Advance Dog Healthy Weight Large Breed Chicken 			40.1
+9. Advance Dog Healthy Weight Medium Breed Chicken 			40.1
+10. Advance Dog Healthy Weight Small Breed Chicken 			40.05
+11. Advance Dog Medium Breed Adult 						35
