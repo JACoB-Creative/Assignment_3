@@ -5,133 +5,448 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>product-list</title>
     <link rel="stylesheet" href="styles/reset.css">
-    <link rel="stylesheet" href="styles/main.css">
+    <!-- <link rel="stylesheet" href="styles/main.css"> -->
+    <link rel="stylesheet" href="list.css">
+    <link rel="stylesheet" href="typography-0531-YQ.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 </head>
 <body>
-    <main class="main main--product-list">
-        <div class="breadcrumble-navigation">
-            <ul>
-                <li>
-                    <a href="#">
-                        <i class="fa-solid fa-house"></i>
-                    </a>
-                </li>
+    <main class="product-list__container">
+        
+        <span class="product-list__breadcrumble">
+            <a href="#" class="product-list__breadcrumble-icon"><i class="fa-solid fa-house"></i></a> <i class="fa-solid fa-angle-right"></i><a href="#" class="product-list__breadcrumble-text">Dog Food</a>
+        </span>
 
-                <li>
-                    <i class="fa-solid fa-angle-right"></i>
-                </li>
+        <div class="product-list__title">Dog Food</div>
 
-                <li>
-                    <a href="#">Dog Food</a>
-                </li>
-            </ul>
-
-        </div>
-
-        <div class="list__title list__title-text">
-            <h1>Dog Food</h1>
-        </div>
-
-        <div class="entire-page-container">
+        <div class="product-list__content">
             
-            <div class="sidebar-container">
-                <ul>
-                    <li class="filter__content-text">
+            <div class="filter__container">
+                <ul class="filter__checkbox">
+                    <li class="filter__heading-text">
                         <p>Sort</p>
                     </li>
 
                     <li class="filter__content-text">
-                        <p>Relevance</p>
-                        <p>akphabetical, A-Z</p>
-                        
+                        <input type="checkbox"  class="custom-checkbox">
+                        <label for="checkbox">Relevance</label>
+
+                    </li>
+
+                    <li class="filter__content-text">
+                        <input type="checkbox" class="custom-checkbox">
+                        <label for="checkbox">Alphabetical, A-Z</label>
+                    </li>
+
+                    <li class="filter__content-text">
+                        <input type="checkbox" class="custom-checkbox">
+                        <label for="checkbox">Alphabetical, Z-A</label>
+                    </li>
+
+                    <li class="filter__content-text">
+                        <input type="checkbox" class="custom-checkbox">
+                        <label for="checkbox">Price, low to high</label>
+                    </li>
+
+                    <li class="filter__content-text">
+                        <input type="checkbox" class="custom-checkbox">
+                        <label for="checkbox">Price, high to low</label>
+                    </li>
+
+                    <li class="filter__content-text">
+                        <input type="checkbox" class="custom-checkbox">
+                        <label for="checkbox">Price, high to low</label>
                     </li>
                 </ul>
-            </div>
-            
-            <div class="product-list-container">
-                <div class="single_card" >
-                    <div class="img_area">
-                        <img src="https://github.com/JACoB-Creative/Assignment_3/raw/main/images/dog_food/dog_food_1/a.webp" alt="">
-                        <div class="overlay">
-                            <button class="add_to_cart">Add to Cart</button>
-                            <button class="view_details">View Details</button>
-                        </div>
+
+                <ul class="filter__checkbox">
+                    <li class="filter__heading-text">
+                        <p>Stock</p>
+                    </li>
+
+                    <li class="filter__content-text">
+                        <input type="checkbox" class="custom-checkbox">
+                        <label for="checkbox">In stock</label>
+                    </li>
+
+                    <li class="filter__content-text"> 
+                        <input type="checkbox" class="custom-checkbox">
+                        <label for="checkbox">Out of stock</label>
+                    </li>
+
+                </ul>
+
+
+                <div class="price-selector">
+
+                    <div class="filter__heading-text">Price</div>
+
+                    <div class="line">
+                        <div class="line-indicator"></div>
                     </div>
-        
-                    <div class="product_info text--sm">
-                        <div class="product_name">
-                            <p>Advance Dog Adult Large Oodles Salmon</p>
-                        </div>
-            
-                        <div class="product_price">
-                            $37.20
-                        </div>
-                    </div>
-        
                     
+                    <ul class="price-range">
+                        <li class="price-text">$10</li>
+                        <li class="price-text">$100</li>
+                    </ul>
                 </div>
-        
-                <div class="single_card">
-                    <div class="img_area">
-                        <img src="https://github.com/JACoB-Creative/Assignment_3/raw/main/images/dog_food/dog_food_7/a.webp" alt="">
-                        <div class="overlay">
-                            <button class="add_to_cart">Add to Cart</button>
-                            <button class="view_details">View Details</button>
-                        </div>
-                    </div>
-        
-                    <div class="product_info text--sm">
-                        <div class="product_name">
-                            <p>Advance Dog Healthy Ageing Small Bread Chicken 3kg</p>
-                        </div>
-            
-                        <div class="product_price">
-                            $40.05
-                        </div>
-                    </div>
-                </div>
-        
-                <div class="single_card">
-                    <div class="img_area">
-                        <img src="https://github.com/JACoB-Creative/Assignment_3/raw/main/images/dog_food/dog_food_11/a.webp" alt="">
-                        <div class="overlay">
-                            <button class="add_to_cart">Add to Cart</button>
-                            <button class="view_details">View Details</button>
-                        </div>
-                    </div>
-        
-                    <div class="product_info text--sm">
-                        <div class="product_name">
-                            <p>Advance Dog Healthy Ageing Small Bread Chicken 3kg</p>
-                        </div>
-            
-                        <div class="product_price">
-                            $40.05
-                        </div>
-                    </div>
-                </div>
-        
-                <div class="single_card">
-                    <div class="img_area">
-                        <img src="https://github.com/JACoB-Creative/Assignment_3/raw/main/images/dog_food/dog_food_11/a.webp" alt="">
-                        <div class="overlay">
-                            <button class="add_to_cart">Add to Cart</button>
-                            <button class="view_details">View Details</button>
-                        </div>
-                    </div>
-        
-                    <div class="product_info text--sm">
-                        <div class="product_name">
-                            <p>Advance Dog Healthy Ageing Small Bread Chicken 3kg</p>
-                        </div>
-            
-                        <div class="product_price">
-                            $40.05
-                        </div>
-                    </div>
-                </div>
+
+                <ul class="filter__checkbox">
+                    <li class="filter__heading-text">
+                        <p>Brand</p>
+                    </li>
+
+                    <li class="filter__content-text">
+                        <input type="checkbox" class="custom-checkbox">
+                        <label for="checkbox">Advance</label>
+                    </li>
+
+                    <li class="filter__content-text">
+                        <input type="checkbox" class="custom-checkbox">
+                        <label for="checkbox">Black Hawk</label>
+                    </li>
+
+                    <li class="filter__content-text">
+                        <input type="checkbox" class="custom-checkbox">
+                        <label for="checkbox">Cobber</label>
+                    </li>
+
+                    <li class="filter__content-text">
+                        <input type="checkbox" class="custom-checkbox">
+                        <label for="checkbox">Coprice</label>
+                    </li>
+
+                    <li class="filter__content-text">
+                        <input type="checkbox" class="custom-checkbox">
+                        <label for="checkbox">Eukanuba</label>
+
+                    </li>
+
+                    <li class="filter__content-text">
+                        <input type="checkbox" class="custom-checkbox">
+                        <label for="checkbox">Hypro</label>
+
+                    </li>
+
+                    <li class="filter__content-text">
+                        <input type="checkbox" class="custom-checkbox">
+                        <label for="checkbox">Ivory Coat</label>
+
+                    </li>
+
+                    <li class="filter__content-text">
+                        <input type="checkbox" class="custom-checkbox">
+                        <label for="checkbox">Royal Canin</label>
+
+                    </li>
+
+                    <li class="filter__content-text">
+                        <input type="checkbox" class="custom-checkbox">
+                        <label for="checkbox">Supercoat</label>
+
+                    </li>
+                        
+                </ul>
             </div>
 
+            <div class="filter__horizontal">
+                <button class="filter__brand"><i class="fa-solid fa-sliders"></i></button>
+                <button class="filter__brand">Advance</button>
+                <button class="filter__brand"><p>Black Hawk</p></button>
+                <button class="filter__brand">Cobber</button>
+                <button class="filter__brand">Coprice</button>
+            </div>
+            
+            <div class="list__container">
+
+                <!-- product card -->
+                <div class="list__card" >
+                    <div class="card__container">
+                        <div class="card__img-area">
+                            <img src="https://github.com/JACoB-Creative/Assignment_3/raw/main/images/dog_food/dog_food_1/a.webp" alt="">
+                            <div class="card__overlay">
+                                <button class="card__add">Add to Cart</button>
+                                <button class="card__view">View Details</button>
+                            </div>
+                        </div>
+            
+                        <div class="card__info">
+                            <div class="card__name-text">
+                                <p>Advance Dog Adult Large Oodles Salmon</p>
+                            </div>
+                
+                            <div class="card__price-text">
+                                $37.20
+                            </div>
+                        </div>
+
+                    </div> 
+                </div>
+
+                <div class="list__card" >
+                    <div class="card__container">
+                        <div class="card__img-area">
+                            <img src="https://github.com/JACoB-Creative/Assignment_3/raw/main/images/dog_food/dog_food_2/a.webp" alt="">
+                            <div class="card__overlay">
+                                <button class="card__add">Add to Cart</button>
+                                <button class="card__view">View Details</button>
+                            </div>
+                        </div>
+            
+                        <div class="card__info">
+                            <div class="card__name-text">
+                                <p>Advance Dog Adult Large Oodles Salmon</p>
+                            </div>
+                
+                            <div class="card__price-text">
+                                $40.20
+                            </div>
+                        </div>
+
+                    </div> 
+                </div>
+
+                <div class="list__card" >
+                    <div class="card__container">
+                        <div class="card__img-area">
+                            <img src="https://github.com/JACoB-Creative/Assignment_3/raw/main/images/dog_food/dog_food_3/a.webp" alt="">
+                            <div class="card__overlay">
+                                <button class="card__add">Add to Cart</button>
+                                <button class="card__view">View Details</button>
+                            </div>
+                        </div>
+            
+                        <div class="card__info">
+                            <div class="card__name-text">
+                                <p>Advance Dog Adult Large Oodles Salmon</p>
+                            </div>
+                
+                            <div class="card__price-text">
+                                $37.20
+                            </div>
+                        </div>
+
+                    </div> 
+                </div>
+
+                <div class="list__card" >
+                    <div class="card__container">
+                        <div class="card__img-area">
+                            <img src="https://github.com/JACoB-Creative/Assignment_3/raw/main/images/dog_food/dog_food_4/a.webp" alt="">
+                            <div class="card__overlay">
+                                <button class="card__add">Add to Cart</button>
+                                <button class="card__view">View Details</button>
+                            </div>
+                        </div>
+            
+                        <div class="card__info">
+                            <div class="card__name-text">
+                                <p>Advance Dog Adult Large Oodles Salmon</p>
+                            </div>
+                
+                            <div class="card__price-text">
+                                $37.20
+                            </div>
+                        </div>
+
+                    </div> 
+                </div>
+
+                <div class="list__card" >
+                    <div class="card__container">
+                        <div class="card__img-area">
+                            <img src="https://github.com/JACoB-Creative/Assignment_3/raw/main/images/dog_food/dog_food_5/a.webp" alt="">
+                            <div class="card__overlay">
+                                <button class="card__add">Add to Cart</button>
+                                <button class="card__view">View Details</button>
+                            </div>
+                        </div>
+            
+                        <div class="card__info">
+                            <div class="card__name-text">
+                                <p>Advance Dog Adult Large Oodles Salmon</p>
+                            </div>
+                
+                            <div class="card__price-text">
+                                $37.20
+                            </div>
+                        </div>
+
+                    </div> 
+                </div>
+
+                <div class="list__card" >
+                    <div class="card__container">
+                        <div class="card__img-area">
+                            <img src="https://github.com/JACoB-Creative/Assignment_3/raw/main/images/dog_food/dog_food_6/a.webp" alt="">
+                            <div class="card__overlay">
+                                <button class="card__add">Add to Cart</button>
+                                <button class="card__view">View Details</button>
+                            </div>
+                        </div>
+            
+                        <div class="card__info">
+                            <div class="card__name-text">
+                                <p>Advance Dog Adult Large Oodles Salmon</p>
+                            </div>
+                
+                            <div class="card__price-text">
+                                $37.20
+                            </div>
+                        </div>
+
+                    </div> 
+                </div>
+
+                <div class="list__card" >
+                    <div class="card__container">
+                        <div class="card__img-area">
+                            <img src="https://github.com/JACoB-Creative/Assignment_3/raw/main/images/dog_food/dog_food_7/a.webp" alt="">
+                            <div class="card__overlay">
+                                <button class="card__add">Add to Cart</button>
+                                <button class="card__view">View Details</button>
+                            </div>
+                        </div>
+            
+                        <div class="card__info">
+                            <div class="card__name-text">
+                                <p>Advance Dog Adult Large Oodles Salmon</p>
+                            </div>
+                
+                            <div class="card__price-text">
+                                $37.20
+                            </div>
+                        </div>
+
+                    </div> 
+                </div>
+
+                <div class="list__card" >
+                    <div class="card__container">
+                        <div class="card__img-area">
+                            <img src="https://github.com/JACoB-Creative/Assignment_3/raw/main/images/dog_food/dog_food_8/a.webp" alt="">
+                            <div class="card__overlay">
+                                <button class="card__add">Add to Cart</button>
+                                <button class="card__view">View Details</button>
+                            </div>
+                        </div>
+            
+                        <div class="card__info">
+                            <div class="card__name-text">
+                                <p>Advance Dog Adult Large Oodles Salmon</p>
+                            </div>
+                
+                            <div class="card__price-text">
+                                $37.20
+                            </div>
+                        </div>
+
+                    </div> 
+                </div>
+
+                <div class="list__card" >
+                    <div class="card__container">
+                        <div class="card__img-area">
+                            <img src="https://github.com/JACoB-Creative/Assignment_3/raw/main/images/dog_food/dog_food_9/a.webp" alt="">
+                            <div class="card__overlay">
+                                <button class="card__add">Add to Cart</button>
+                                <button class="card__view">View Details</button>
+                            </div>
+                        </div>
+            
+                        <div class="card__info">
+                            <div class="card__name-text">
+                                <p>Advance Dog Adult Large Oodles Salmon</p>
+                            </div>
+                
+                            <div class="card__price-text">
+                                $37.20
+                            </div>
+                        </div>
+
+                    </div> 
+                </div>
+
+                <div class="list__card" >
+                    <div class="card__container">
+                        <div class="card__img-area">
+                            <img src="https://github.com/JACoB-Creative/Assignment_3/raw/main/images/dog_food/dog_food_10/a.webp" alt="">
+                            <div class="card__overlay">
+                                <button class="card__add">Add to Cart</button>
+                                <button class="card__view">View Details</button>
+                            </div>
+                        </div>
+            
+                        <div class="card__info">
+                            <div class="card__name-text">
+                                <p>Advance Dog Adult Large Oodles Salmon</p>
+                            </div>
+                
+                            <div class="card__price-text">
+                                $37.20
+                            </div>
+                        </div>
+
+                    </div> 
+                </div>
+
+                <div class="list__card" >
+                    <div class="card__container">
+                        <div class="card__img-area">
+                            <img src="https://github.com/JACoB-Creative/Assignment_3/raw/main/images/dog_food/dog_food_11/a.webp" alt="">
+                            <div class="card__overlay">
+                                <button class="card__add">Add to Cart</button>
+                                <button class="card__view">View Details</button>
+                            </div>
+                        </div>
+            
+                        <div class="card__info">
+                            <div class="card__name-text">
+                                <p>Advance Dog Adult Large Oodles Salmon</p>
+                            </div>
+                
+                            <div class="card__price-text">
+                                $37.20
+                            </div>
+                        </div>
+
+                    </div> 
+                </div>
+
+                <div class="list__card" >
+                    <div class="card__container">
+                        <div class="card__img-area">
+                            <img src="https://github.com/JACoB-Creative/Assignment_3/raw/main/images/dog_food/dog_food_1/a.webp" alt="">
+                            <div class="card__overlay">
+                                <button class="card__add">Add to Cart</button>
+                                <button class="card__view">View Details</button>
+                            </div>
+                        </div>
+            
+                        <div class="card__info">
+                            <div class="card__name-text">
+                                <p>Advance Dog Adult Large Oodles Salmon</p>
+                            </div>
+                
+                            <div class="card__price-text">
+                                $37.20
+                            </div>
+                        </div>
+
+                    </div> 
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="product-list__pagination">
+            
+            <button class="pagination__text" onclick="location.href='#'">1</button>
+            <button class="pagination__text" onclick="location.href='product-list-02.html'">2</button>
+            <button class="pagination__text" onclick="location.href='#'">3</button>
+            <button class="pagination__text" onclick="location.href='#'">...</button>
+            <button class="pagination__text" onclick="location.href='#'">8</button>
         </div>
     </main>
     <script src="scripts/template-footer-header.js"></script>
