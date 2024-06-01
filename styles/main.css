@@ -300,6 +300,70 @@ INDEX
     margin-bottom: 24px;
 }
 
+/* ---------- Branding ---------- */
+.branding__title{
+    transform: translateY(1.5rem);
+}
+.branding__title > dl > dt{
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: Helvetica, Arial, sans-serif;
+}
+.branding__title > dl > dd{
+    text-align: center;
+    font-size: 3rem;
+    font-family: 'Helvetica-Rounded-Bold', sans-serif;
+}
+.index__branding{
+    background: #F3ECE5;
+    border-radius: 3rem;
+    padding-top: 5%;
+}
+.branding__title{
+    display: flex;
+    justify-content: center;
+}
+.branding__title > dl > dd{
+    font-weight: bold;
+}
+.img__container{
+    display: flex;
+    justify-content: center;
+    width: 80%;
+    height: 100%;
+    margin: 0 10%;
+    /* border: 2px solid #000; */
+}
+.branding__img{
+    padding: 5%;
+    margin: 10;
+}
+
+.branding__img > img{
+    
+    width: 100%;
+    height: 18vw;
+    min-width: 84px;
+    min-height: 105px;
+    /* box-shadow: 0 0.2rem 1.2rem #888888; */
+    margin: 5% 0;
+}
+.img__caption{
+    text-align: center;
+    margin: 5%;
+    font-family: Helvetica, Arial, sans-serif;
+}
+.branding__slogan{
+    text-align: center;
+    font-size: 1.8rem;
+    line-height: 2.3rem;
+    background: #F1E1D2;
+    margin: 10% 0;
+    padding: 4%;
+    transform: translateY(-5rem);
+    font-family: 'Helvetica-Rounded-Bold', sans-serif;
+}
+
 /* ---------------------------------------------------------------------------
 PRODUCT LIST 
 --------------------------------------------------------------------------- */
@@ -319,7 +383,7 @@ PRODUCT LIST
     align-items: center;
     flex-wrap: wrap;
     color: #000000;
-    margin-bottom: 0.5rem;
+    margin: 2rem;
     /* border: 1px solid #000; */
 
 }
@@ -348,7 +412,6 @@ PRODUCT LIST
     justify-content: center;
     /* border: 2px solid #16cf50; */
 }
-
 
 .filter__container{
     width: 26%;
@@ -545,7 +608,7 @@ PRODUCT LIST
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 10%;
+    margin: 4% 2% 10% 25%;
     /* border: 2px solid #000000; */
 }
 
@@ -1192,6 +1255,25 @@ PAYMENT
         border-image-width: 1px; 
     }
 
+    /* ---------------------------------------------------------------------------
+    INDEX 
+    --------------------------------------------------------------------------- */
+    .branding__slogan{
+        font-size: 1rem;
+        line-height: 1.2rem;
+        transform: translateY(-3rem);
+        margin: 10% 0;
+    }
+    .branding__title > dl > dt{
+        font-size: 1rem;
+    }
+    .branding__title > dl > dd{
+        font-size: 1.8rem;
+    }
+    .img__caption{
+        font-size: 1rem
+    }
+
    
     /* ---------------------------------------------------------------------------
     PRODUCT LIST 
@@ -1299,6 +1381,25 @@ PAYMENT
     }
     .ad__item--mobile:nth-child(8) {
         width: 10.5rem;
+    }
+
+    /* ---------- Branding ---------- */
+
+    .branding__slogan{
+        font-size: 0.7rem;
+        line-height: 1rem;
+        transform: translateY(-3rem);
+        margin: 10% 0;
+    }
+    .branding__title > dl > dt{
+        font-size: 0.7rem;
+    }
+    .branding__title > dl > dd{
+        font-size: 1.5rem;
+    }
+    .img__caption{
+        font-size: 0.8rem;
+        line-height:1rem;
     }
 
     /* ---------------------------------------------------------------------------

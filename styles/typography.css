@@ -142,24 +142,24 @@
 /* ---------------------------------------------------------------------------
    Product List
 --------------------------------------------------------------------------- */
-.list__title-text{
+.product-list__title{
     font-family: 'Helvetica-Rounded-Bold', sans-serif;
-    font-size: var(--text-xl);
+    font-size: var(--text-lg);
     color: var(--color-text);
 }
-.filter__content-text{
-    font-family: "Montserrat", sans-serif;
-    font-size: var(--text-md);
-    color: var(--color-text);
-}
+
 .card__name-text{
     font-family: 'Helvetica-Regular', sans-serif;
     font-size: var(--text-sm);
     color: var(--color-text);
+    margin-top: 5%;
+    line-height: 150%;
 }
 .card__price-text{
     font-family: 'Helvetica-Rounded-Bold', sans-serif;
-    font-size: var(--text-md);
+    font-size: var(--text-sm);
+    font-weight: 400;
+    margin-top: 11%;
 }
 .pagnimation__text{
     font-family: 'Helvetica-Regular', sans-serif;
@@ -333,6 +333,11 @@
         /* --text-xl   56px */
         /* --text-xxl  84px */
     }
+    /* ---------- HEADER ---------- */
+
+    .nav__search-result ul li{
+        font-family: 'Helvetica-Regular', sans-serif;
+    }
     /* ---------- FOOTER ---------- */
     .section__heading-text{
         font-family: 'Helvetica-Bold',sans-serif;
@@ -350,14 +355,37 @@
     .section__email-input{
         font-size: 16px;
     }
-    /* ---------- PRODUCT LIST ---------- */
-    .filter__heading-text{
+
+     /* ---------- PRODUCT LIST ---------- */
+     .filter__heading-text{
         font-family: 'Helvetica-Rounded-Bold', sans-serif;
         font-size: var(--text-md);
+        margin-bottom: 10%;
+        font-weight: 200;
     }
     .filter__content-text{
         font-family: 'Helvetica-Regular', sans-serif;
         font-size: var(--text-sm);
+        margin-bottom: 8%;
+    }
+    .product-list__title{
+        font-family: 'Helvetica-Rounded-Bold', sans-serif;
+        font-size: var(--text-xl);
+        color: var(--color-text);
+    }
+    .card__name-text{
+        font-family: 'Helvetica-Regular', sans-serif;
+        font-size: var(--text-xs);
+        color: var(--color-text);
+        line-height: 150%;
+        margin: 3% 0;
+    }
+
+    .card__price-text{
+        font-family: 'Helvetica-Rounded-Bold', sans-serif;
+        font-size: var(--text-sm);
+        font-weight: 400;
+        margin-top: 11%;
     }
     /* ---------------------------------------------------------------------------
     Index
@@ -369,6 +397,23 @@
     .arrival__card-price {
         font-size: 18px;
     }
+    /* ---------------------------------------------------------------------------
+    Product
+    --------------------------------------------------------------------------- */
+    .tab__content-text > p{
+        line-height: 1.5rem;
+        font-size: 1rem;
+        margin-top: 1.5rem;
+    }
+
+    .tab__content-text > ul > li{
+        font-size: 1rem;
+        line-height: 2rem;
+    }
+    .tab__content-text > ul {
+        margin-top: 1.5rem;
+    }
+
     /* ---------------------------------------------------------------------------
     Cart
     --------------------------------------------------------------------------- */
@@ -384,5 +429,10 @@
     .summary__order-title {
         font-family: "Montserrat", sans-serif;
         font-size: 20px;
+    }
+    .payment__label{
+        font-family: 'Helvetica-Regular', sans-serif;
+        font-weight: bold;
+        color: #5A5757;
     }
 }
