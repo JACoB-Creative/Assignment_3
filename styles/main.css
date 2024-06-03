@@ -378,7 +378,7 @@ PRODUCT LIST
     font-family: Helvetica,Arial,sans-serif;
 }
 
-.product-list__breadcrumble{
+.product-list__breadcrumb{
     display: flex;
     align-items: center;
     flex-wrap: wrap;
@@ -387,13 +387,14 @@ PRODUCT LIST
     /* border: 1px solid #000; */
 
 }
-.product-list__breadcrumble > a{
+.product-list__breadcrumb > a{
     font-size:1rem;
+    font-family: helvetica, sans-serif;
     color: #555555;
     margin: 0 1rem;
     text-decoration: none;
 }
-.product-list__breadcrumble > a:nth-child(1){
+.product-list__breadcrumb > a:nth-child(1){
     margin-left:0rem;
 }
 
@@ -608,7 +609,7 @@ PRODUCT LIST
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 4% 2% 10% 25%;
+    margin: 5% 10%;
     /* border: 2px solid #000000; */
 }
 
@@ -618,7 +619,7 @@ PRODUCT LIST
     height: 4%;
     border-radius: 2rem;
     border: none;
-    padding: 1% 0;
+    padding: 10% 0;
     margin: 1%;
     font-family:Montserrat, Helvetica, Arial, sans-serif;
     font-weight: bold;
@@ -1184,6 +1185,7 @@ PAYMENT
     IPAD SECTION
 =============================================================================
 */
+
 @media screen and (max-width: 900px){
 
     /* ---------------------------------------------------------------------------
@@ -1421,7 +1423,7 @@ PAYMENT
     }
 
     .filter__brand{
-        /* all: unset; */
+        all: unset;
         background: #ffffff;
         border-radius: 2rem;
         border: none;
