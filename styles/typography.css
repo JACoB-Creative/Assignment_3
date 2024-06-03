@@ -316,6 +316,11 @@
     font-weight: bold;
     font-size: 20px;
 }
+.payment__label {
+    font-family: 'Helvetica-Rounded-Bold', sans-serif;
+    font-size: 20px; /* FIXED FONT SIZE */
+    color: var(--grey-5);
+}
 /**
 =============================================================================
     PC SECTION
